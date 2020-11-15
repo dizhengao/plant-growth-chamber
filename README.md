@@ -1,4 +1,4 @@
-# Plant Chamber
+# Plant Growth Chamber
 [Link](https://www.hackster.io/biomaker-2019-team-8/ctod-from-cells-to-droplets-2b3b4f 'this is not yet the link to plant-chamber project') to hackster to be added here.
 ## Overview and Perspective
 This project aims at building a small plant growth chamber to grow *Arabidopsis thaliana* seedlings on multi-well plates. The chamber will be equipped with following the features:
@@ -18,7 +18,8 @@ The project will be based on 3D printing, Arduino (maybe together with Raspberry
 
 >TODO: Generalization to other purposes and other plant species.
 
-
+### Previous designs
+>TODO: Search previous designs on hackster websties and others 
 ## Start
 Idea started in mid 2020. Documentation started on 12.11.2020.
 Real project has not started but will be soon (hopefully...).
