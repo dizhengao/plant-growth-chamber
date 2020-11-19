@@ -14,3 +14,6 @@ Or have a short-live branch:
 3. git checkout master # this moves us back to master branch (which will be the receiving branch)
 4. git merge new-short-branch # presume that the new branch was very short so no new change has happened on remote master branch, then we can directly run 'merge'
 5. git branch -d new-short-branch # delete the short-live branch as it won't be useful.
+
+This is a test by Weiming using GitHub Desktop on Mac.  
+GitHub Desktop just provides a Graphical User Interface(GUI), but essentially all functions can be achieved through command line.
