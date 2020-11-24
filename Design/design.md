@@ -1,7 +1,10 @@
 ## Ideas
 quick thoughts can be added here
 
-[20201115-ZD] Expand the prototype to larger scale: Use a robot with a camera to move around and take pictures of plants every xx minutes/hours; or install tracks for camera on the top of the chamber to take images every  
+
+[20201123-JMH] 1. Use robotic arm or something else to spray water from the top. This will be especially useful to water individual wells that are dried as a complement of watering from the bottom. 2. May include lime as CO2 scrubber to customize CO2 concentration for experiment purposes. 
+
+[20201115-ZD] Expand the prototype to larger scale: Use a robot with a camera to move around and take pictures of plants every xx minutes/hours; or install tracks for camera on the top of the chamber to take images every xx minute/hour.  
 
 
 
