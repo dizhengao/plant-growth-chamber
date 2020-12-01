@@ -1,3 +1,4 @@
 # Comment out those in the final project.
 # test/
 # Application/
+.DS_Store
