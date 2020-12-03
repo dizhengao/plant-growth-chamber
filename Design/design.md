@@ -1,6 +1,8 @@
 ## Ideas
 quick thoughts can be added here
 
+[20201203-ZD] To have another raspberry Pi  with screen showing real time images and data logs, which can be put in home/lab bench so that you won't even have to have a computer to do the monitoring. It would be great if we have this along side with our prototype at the showcase event.
+
 [20201125-Che] Lamp: Control RGB light separately; create different light intensity and RGB components for different experimental purposes. 
 
 [20201123-JMH] 1. Use robotic arm or something else to spray water from the top. This will be especially useful to water individual wells that are dried as a complement of watering from the bottom. 2. May include lime as CO2 scrubber to customize CO2 concentration for experiment purposes. 
