@@ -27,6 +27,17 @@ RS:
 
 ## To Buy
 - [ ] Cutting pad (绿色)
+- [ ] 3 [heating element](https://uk.rs-online.com/web/p/heating-elements/2995950/)
+- [ ] [Fan for air circulation](https://uk.rs-online.com/web/p/axial-fans/6688827/)
+- [ ] For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very  very expensive (>£200)
+- [ ] Insulation panels (if using polystyrene box then may skip that)
+- [ ] AC/DC 12 V adaptor
+- [ ] 1k, 10k and 20k resistors
+- [ ] 3 x 2N3904 transistors
+- [ ] electromechanical relay
+- [ ] Thermometer
+- [ ] silicone sealant
+- [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168), [Adafruit NeoPixel Digital RGB LED Strip - White 30 LED - 1m](https://www.amazon.com/Adafruit-NeoPixel-Digital-RGB-Strip/dp/B00R5CDGWA)? 
 - [ ] 亚克力板
 - [ ] 电钻？
 - [ ] 胶水
