@@ -1,4 +1,4 @@
-# Todo list for the plant growth chamber project
+# Todo list 
 
 ## Application
 
@@ -62,3 +62,4 @@ Che wrote:
 - [ ] Arduino-Pi communication (UART)
 - [ ] XOD
 - [ ] electromechanical relay
+- [ ] Voltage divider
