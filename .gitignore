@@ -2,3 +2,97 @@
 # test/
 Application/
 .DS_Store
+*.h
+*.o
+*.a
+*.ori
+*.yaml
+*.json
+*.txt
+*.c
+*.hex
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/atmega/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/atmega8/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/bt/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/caterina-Arduino_Robot/Makefile
+*.md
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/caterina-LilyPadUSB/Makefile
+*.conf
+*.patch
+*.bat
+*.lst
+*.ppg
+*.pnproj
+*.pnps
+*.cpp
+*.S
+*.bash
+*.template
+*.elf
+*.sh
+*.pdf
+*.x
+*.lds
+*.cproj
+*.my
+*.atsln
+*.ino
+*.properties
+*.bfd
+*.xbn
+*.xn
+*.xr
+*.xu
+*.0
+*.so
+*.la
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/caterina/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/lilypad/src/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/optiboot/makeall
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/optiboot/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/optiboot/omake
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/bootloaders/stk500v2/Makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/atmegaxxu2/arduino-usbdfu/makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/atmegaxxu2/arduino-usbserial/makefile
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/wifishield/wifi_dnld/.cproject
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/wifishield/wifi_dnld/.project
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/wifishield/wifiHD/.cproject
+Code/Temperature Sensing/__packages__/packages/arduino/hardware/avr/1.8.1/firmwares/wifishield/wifiHD/.project
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/ar
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/as
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/ld
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/nm
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/objcopy
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/objdump
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/ranlib
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/readelf
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/bin/strip
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-addr2line
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-ar
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-as
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-c++
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-c++filt
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-cpp
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-elfedit
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc-ar
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc-nm
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc-ranlib
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcov
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcov-dump
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcov-tool
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gdb
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gprof
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-ld
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-man
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-nm
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objdump
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-ranlib
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-readelf
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-size
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-strings
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-strip
+Code/Temperature Sensing/__packages__/packages/arduino/tools/avrdude/6.3.0-arduino17/bin/avrdude
+Code/Temperature Sensing/__packages__/packages/builtin/tools/ctags/5.8-arduino11/ctags
