@@ -36,3 +36,35 @@ Water pump: where to put it???
 
 Large polystyrene box +
 [Heating elements](https://uk.rs-online.com/web/p/heating-elements/2995950/), [air circulation Fan](https://uk.rs-online.com/web/p/axial-fans/6688827/), [cooling fan](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN), insulation panel
+
+
+
+##Sensors [Ongoing]
+
+### Temperature Sensor
+
+| Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
+| ---------- | --------- | -------- | -------- | ----------- |
+| NTC thermistors    | NO       |   [Steinhart-Hart equation](https://learn.adafruit.com/thermistor/using-a-thermistor) | Analog     | TBD|
+
+
+Will try the built on board sensor to agree with calibration tomorrow. This one is an I2C device with address
+
+### Light Sensor
+| Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
+| ---------- | --------- | -------- | -------- | ----------- |
+|GL5528 photoresistor| NO      |  TBD  | Analog | TBD|
+
+I will try and see if I can find a nod representing the sensor on the XOD custom library web.
+
+### Humidity Sensor
+Needs to buy one. Will check tomorrow.
+
+
+[20210109 CHE]
+Required equipment:
+1. 多用电表
+2.  temperature gauge for calibration
+3.  lux meter???
+
+
