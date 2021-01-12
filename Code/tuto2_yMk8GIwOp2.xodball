@@ -1,0 +1,2657 @@
+{
+  "name": "",
+  "patches": {
+    "@/tuto201": {
+      "comments": {
+        "HyozXrqRE": {
+          "content": "Hello, and welcome to this second tutorial!\n",
+          "id": "HyozXrqRE",
+          "position": {
+            "x": 2,
+            "y": -1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 4,
+            "units": "slots"
+          }
+        },
+        "r1yBEBcCN": {
+          "content": "This node controls the LCD screen. Try plugging the extension board to the RICH UNO board, and add the LCD screen using the extension cables and plugging the screen's SDA, SCL, GND and VCC pins to the matching pins of the board.\n\nChange the parameters of the node. Change ADDR from 27h to 38h. Write short texts in L1 and L2, like \"Hello\" and your first names respectively, and then upload the code! ",
+          "id": "r1yBEBcCN",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 7,
+            "units": "slots"
+          }
+        }
+      },
+      "nodes": {
+        "Sy67EHqAN": {
+          "id": "Sy67EHqAN",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        }
+      },
+      "path": "@/tuto201"
+    },
+    "@/tuto202": {
+      "comments": {
+        "rJ_D8SqRV": {
+          "content": "This new node communicates with the knob of the board. It will take values between 0 and 1 as you turn it.\n\nConnect the VAL output of the pot to L2. Upload the code ans see the values change.",
+          "id": "rJ_D8SqRV",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 5,
+            "units": "slots"
+          }
+        }
+      },
+      "nodes": {
+        "SyMU8H50E": {
+          "id": "SyMU8H50E",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "r13X8Bq04": {
+          "boundLiterals": {
+            "B1TSE9tZ-": "\"pot value\"",
+            "rJlYT7EfW": "38h"
+          },
+          "id": "r13X8Bq04",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        }
+      },
+      "path": "@/tuto202"
+    },
+    "@/tuto203": {
+      "comments": {
+        "Bk-tAvr5A4": {
+          "content": "Let's use this potentiometer to adjust the brightness of an LED.\nAdd an LED node, connect the pot's VAL output to the LED's LUM input. Change the PORT input of the LED to 10 and plug the external LED from your kit in the extension shield using your cable. Plug It to GND, VCC and D10. Upload the code and turn the pot around to see the brightness of the LED change. \n\nTo understand more how that works, go on the Hacster page of tutorial 2 ( https://www.hackster.io/jim-haseloff/biomaker-tutorial-2-handling-simple-input-output-devices-63a792 )",
+          "id": "Bk-tAvr5A4",
+          "position": {
+            "x": -1,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 6,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "SJnCDrqAE": {
+          "id": "SJnCDrqAE",
+          "input": {
+            "nodeId": "BktAvHcAE",
+            "pinKey": "H1bLN9F-b"
+          },
+          "output": {
+            "nodeId": "HyeK0PS5AV",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "BktAvHcAE": {
+          "boundLiterals": {
+            "B1TSE9tZ-": "\"pot value\"",
+            "rJlYT7EfW": "38h"
+          },
+          "id": "BktAvHcAE",
+          "position": {
+            "x": 3,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "HyeK0PS5AV": {
+          "id": "HyeK0PS5AV",
+          "position": {
+            "x": 6,
+            "y": 0.75,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        }
+      },
+      "path": "@/tuto203"
+    },
+    "@/tuto204": {
+      "comments": {
+        "ByyvKS50V": {
+          "content": "This is a new node. It collects values that vary between 0 and 1. The vallues it collects come come from sensors and are continuous (ie they can take an infinite number of values from a given range). \n\nTake out the light sensor from your kit, plug it to GND, VCC and A1. \nAdd a 'watch' node to the VAL output of the analog sensor node. Upload the code in debugging mode (clicking on the little bug icon at the bottom of the screen) and play around with the sensor a bit.",
+          "id": "ByyvKS50V",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 8,
+            "units": "slots"
+          }
+        }
+      },
+      "nodes": {
+        "rJYBKHcR4": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "rJYBKHcR4",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        }
+      },
+      "path": "@/tuto204"
+    },
+    "@/tuto205": {
+      "comments": {
+        "SJQeiHqCE": {
+          "content": "Time to make the LED and light sensor interact! \nupload the code in debugging mode and make the light intensity readout go up by making the LED brighter",
+          "id": "SJQeiHqCE",
+          "position": {
+            "x": -2,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 9,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1VkjBcR4": {
+          "id": "B1VkjBcR4",
+          "input": {
+            "nodeId": "r1-JjH50V",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "BkjA9H5CE",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "BktqcHcRN": {
+          "id": "BktqcHcRN",
+          "input": {
+            "nodeId": "HyJc5S904",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "SJeOK9Bq0E",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "SJWdFqHq0V": {
+          "id": "SJWdFqHq0V",
+          "input": {
+            "nodeId": "SJOtqrq04",
+            "pinKey": "H1bLN9F-b"
+          },
+          "output": {
+            "nodeId": "SJeOK9Bq0E",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "BkjA9H5CE": {
+          "id": "BkjA9H5CE",
+          "position": {
+            "x": 5,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "HyJc5S904": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "HyJc5S904",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "SJOtqrq04": {
+          "boundLiterals": {
+            "B1TSE9tZ-": "\"pot value\"",
+            "rJlYT7EfW": "38h"
+          },
+          "id": "SJOtqrq04",
+          "position": {
+            "x": -4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "SJeOK9Bq0E": {
+          "id": "SJeOK9Bq0E",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "r1-JjH50V": {
+          "id": "r1-JjH50V",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        }
+      },
+      "path": "@/tuto205"
+    },
+    "@/tuto206": {
+      "comments": {
+        "SJwVhSqCV": {
+          "content": "Time to make the pot value and light value both appear on the LCD screen. You might have noticed that when you link an output value to L1 or L2 of the LCD, it takes a full line. The 'join' node is a way to hack that problem. 'Join' makes different informations into a single character lines and separates them with the characters of your choice.\nAdd a couple of Join nodes liked to L1 and L2 and displaying \"pot val : [output VAL]\" and \"light val : [output VAL]\" respectively",
+          "id": "SJwVhSqCV",
+          "position": {
+            "x": -1,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 10,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B18pArcR4": {
+          "id": "B18pArcR4",
+          "input": {
+            "nodeId": "ByslhH9A4",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "rJAkhHcA4",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "ByslhH9A4": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "ByslhH9A4",
+          "position": {
+            "x": 0,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "HJMZhSc0V": {
+          "boundLiterals": {
+            "rJlYT7EfW": "38h"
+          },
+          "id": "HJMZhSc0V",
+          "position": {
+            "x": 3,
+            "y": 5,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "SyHehS9A4": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "SyHehS9A4",
+          "position": {
+            "x": 6,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "rJAkhHcA4": {
+          "id": "rJAkhHcA4",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        }
+      },
+      "path": "@/tuto206"
+    },
+    "@/tuto207": {
+      "comments": {
+        "Bk9VeU5AE": {
+          "content": "You should have arrived at something looking roughly like this. \nThe next step is to make a short program to use the light sensor not to give a precise value but a readout of whether the light is too bright, too dim or ok.\nWe will be using XOD not only for controlling components but for building programs. \nLet's meet at tut 208 to begin!",
+          "id": "Bk9VeU5AE",
+          "position": {
+            "x": 1,
+            "y": -1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 8,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "Bye2TB5AV": {
+          "id": "Bye2TB5AV",
+          "input": {
+            "nodeId": "rJbGiTHqRV",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "SJGiTrcR4",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "HJT0THq0E": {
+          "id": "HJT0THq0E",
+          "input": {
+            "nodeId": "HJt0pB90N",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "rJgGjTB5CV",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "rkT2aBcR4": {
+          "id": "rkT2aBcR4",
+          "input": {
+            "nodeId": "rkzGsprqR4",
+            "pinKey": "B1TSE9tZ-"
+          },
+          "output": {
+            "nodeId": "SkrnTSq0E",
+            "pinKey": "HJrBNr4dG"
+          }
+        },
+        "rkz6TrcAV": {
+          "id": "rkz6TrcAV",
+          "input": {
+            "nodeId": "SkrnTSq0E",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "SJGiTrcR4",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "ry410H9CE": {
+          "id": "ry410H9CE",
+          "input": {
+            "nodeId": "rkzGsprqR4",
+            "pinKey": "H1bLN9F-b"
+          },
+          "output": {
+            "nodeId": "HJt0pB90N",
+            "pinKey": "HJrBNr4dG"
+          }
+        }
+      },
+      "nodes": {
+        "HJt0pB90N": {
+          "boundLiterals": {
+            "HynENHNOz": "\"light val\"",
+            "rJGQNB4df": "\" :\""
+          },
+          "id": "HJt0pB90N",
+          "position": {
+            "x": 6,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/join"
+        },
+        "SJGiTrcR4": {
+          "id": "SJGiTrcR4",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "SkrnTSq0E": {
+          "boundLiterals": {
+            "HynENHNOz": "\"pot val\"",
+            "rJGQNB4df": "\" :\""
+          },
+          "id": "SkrnTSq0E",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/join"
+        },
+        "rJbGiTHqRV": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "rJbGiTHqRV",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "rJgGjTB5CV": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "rJgGjTB5CV",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "rkzGsprqR4": {
+          "boundLiterals": {
+            "rJlYT7EfW": "38h"
+          },
+          "id": "rkzGsprqR4",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        }
+      },
+      "path": "@/tuto207"
+    },
+    "@/tuto208": {
+      "comments": {
+        "B1x3-L904": {
+          "content": "the Less node outputs TRUE if the first of its input is inferior to the second one, and FALSE otherwise. Decide on a threshold for when the ligt is too dim and add that as the second value for this node. You can open the program in debugging mode and use the watch node to decide on that threshold.",
+          "id": "B1x3-L904",
+          "position": {
+            "x": -3,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 6,
+            "units": "slots"
+          }
+        },
+        "HkqHfIcAE": {
+          "content": "Add the 'Greater' node to make a threshold for when the light is too bright, using the same logic.",
+          "id": "HkqHfIcAE",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 5,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1Aq-UqCE": {
+          "id": "B1Aq-UqCE",
+          "input": {
+            "nodeId": "S1jFbU9C4",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "B1vObLqAV",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "r1_5W8904": {
+          "id": "r1_5W8904",
+          "input": {
+            "nodeId": "H1gYZIqAN",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "B1vObLqAV",
+            "pinKey": "BkoeN9Ay7"
+          }
+        }
+      },
+      "nodes": {
+        "B1vObLqAV": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "B1vObLqAV",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "H1gYZIqAN": {
+          "id": "H1gYZIqAN",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "S1jFbU9C4": {
+          "id": "S1jFbU9C4",
+          "position": {
+            "x": 5,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        }
+      },
+      "path": "@/tuto208"
+    },
+    "@/tuto209": {
+      "comments": {
+        "BkNqm85CN": {
+          "content": "The if-else node takes a TRUE/FALSE value as an input, and outputs either what you have plugged in T is the input is TRUE or in F if the input is FALSE. In this case, if the input is false, the node will output nothing. \nreplace the text plugged in T with \"too dim\"\nAdd another if-else node for the \"too bright\" threshold. Run the code in debugging mode to test if everything went as planned.",
+          "id": "BkNqm85CN",
+          "position": {
+            "x": -1,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 5,
+            "units": "slots"
+          }
+        },
+        "HJ84XL90V": {
+          "content": "having a TRUE or FALSE output for the less and greater nodes allows you to use some if-else logic nodes. ",
+          "id": "HJ84XL90V",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 8,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1d7X8qC4": {
+          "id": "B1d7X8qC4",
+          "input": {
+            "nodeId": "BJXx7IqCV",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "Bkb89fUc0N",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "BJQIqzL9CE": {
+          "id": "BJQIqzL9CE",
+          "input": {
+            "nodeId": "Bkb89fUc0N",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "rJLcf8504",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "BkfU5MI50N": {
+          "id": "BkfU5MI50N",
+          "input": {
+            "nodeId": "HJeUcGI5CV",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "rJLcf8504",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "HkZT4UqRV": {
+          "id": "HkZT4UqRV",
+          "input": {
+            "nodeId": "HJC2V8cAN",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "BJXx7IqCV",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "SkjzmUq0V": {
+          "id": "SkjzmUq0V",
+          "input": {
+            "nodeId": "BJXx7IqCV",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "ByIzXLqAN",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "SyqozUqCN": {
+          "id": "SyqozUqCN",
+          "input": {
+            "nodeId": "rkIsfU9C4",
+            "pinKey": "rJg00Nhe-"
+          },
+          "output": {
+            "nodeId": "rJLcf8504",
+            "pinKey": "BkoeN9Ay7"
+          }
+        }
+      },
+      "nodes": {
+        "BJXx7IqCV": {
+          "id": "BJXx7IqCV",
+          "position": {
+            "x": 4,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "Bkb89fUc0N": {
+          "id": "Bkb89fUc0N",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        },
+        "ByIzXLqAN": {
+          "id": "ByIzXLqAN",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "HJC2V8cAN": {
+          "id": "HJC2V8cAN",
+          "position": {
+            "x": 4,
+            "y": 5,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "HJeUcGI5CV": {
+          "id": "HJeUcGI5CV",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "rJLcf8504": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "rJLcf8504",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "rkIsfU9C4": {
+          "id": "rkIsfU9C4",
+          "position": {
+            "x": 7,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/greater"
+        }
+      },
+      "path": "@/tuto209"
+    },
+    "@/tuto210": {
+      "comments": {
+        "SyCqB8904": {
+          "content": "This new node in the middle is called NOR. It will output TRUE if and only if everything connected to it is FALSE. use nor as the input for one third if-else node that outputs \"all ok\" when the light is neither under 0.3 nor over 0.8",
+          "id": "SyCqB8904",
+          "position": {
+            "x": 11,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 5,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "Byk9B85RV": {
+          "id": "Byk9B85RV",
+          "input": {
+            "nodeId": "SyoOHL9RN",
+            "pinKey": "r1tz8CdBDkb"
+          },
+          "output": {
+            "nodeId": "rJZ3-B89C4",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "H1GcrUcRV": {
+          "id": "H1GcrUcRV",
+          "input": {
+            "nodeId": "SyoOHL9RN",
+            "pinKey": "S1dG8AOBPJW"
+          },
+          "output": {
+            "nodeId": "Syz3Wr89CE",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "HkP2-S850N": {
+          "id": "HkP2-S850N",
+          "input": {
+            "nodeId": "rJZ3-B89C4",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "SynWrL904",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "Hy_hbrUq0E": {
+          "id": "Hy_hbrUq0E",
+          "input": {
+            "nodeId": "Syz3Wr89CE",
+            "pinKey": "rJg00Nhe-"
+          },
+          "output": {
+            "nodeId": "SynWrL904",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "S1UhbBUcAV": {
+          "id": "S1UhbBUcAV",
+          "input": {
+            "nodeId": "HJxhbHUq04",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "SynWrL904",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "SJfySHU504": {
+          "id": "SJfySHU504",
+          "input": {
+            "nodeId": "rkySHL5AE",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "Bkg1rHUqAN",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "r1DSHI9CE": {
+          "id": "r1DSHI9CE",
+          "input": {
+            "nodeId": "rkySHL5AE",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "Syz3Wr89CE",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "r1mkBSI50E": {
+          "id": "r1mkBSI50E",
+          "input": {
+            "nodeId": "HJZkSHIcRV",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "rkySHL5AE",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "rkYhbB8qAE": {
+          "id": "rkYhbB8qAE",
+          "input": {
+            "nodeId": "SyX2-SIcCE",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "HkEhZr8qCN",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "rksnbSL9AV": {
+          "id": "rksnbSL9AV",
+          "input": {
+            "nodeId": "SkrhWHUcRN",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "SyX2-SIcCE",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "ry92WB89AE": {
+          "id": "ry92WB89AE",
+          "input": {
+            "nodeId": "SyX2-SIcCE",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "rJZ3-B89C4",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        }
+      },
+      "nodes": {
+        "Bkg1rHUqAN": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too bright\""
+          },
+          "id": "Bkg1rHUqAN",
+          "position": {
+            "x": 9,
+            "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "HJZkSHIcRV": {
+          "id": "HJZkSHIcRV",
+          "position": {
+            "x": 8,
+            "y": 4,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "HJxhbHUq04": {
+          "id": "HJxhbHUq04",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "HkEhZr8qCN": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too dim\""
+          },
+          "id": "HkEhZr8qCN",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "SkrhWHUcRN": {
+          "id": "SkrhWHUcRN",
+          "position": {
+            "x": 2,
+            "y": 4,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "SyX2-SIcCE": {
+          "id": "SyX2-SIcCE",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "SynWrL904": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "SynWrL904",
+          "position": {
+            "x": 5,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "SyoOHL9RN": {
+          "id": "SyoOHL9RN",
+          "position": {
+            "x": 6,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/nor"
+        },
+        "Syz3Wr89CE": {
+          "boundLiterals": {
+            "HJbACN3gb": "0.8"
+          },
+          "id": "Syz3Wr89CE",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/greater"
+        },
+        "rJZ3-B89C4": {
+          "boundLiterals": {
+            "SJqZ8COrDkW": "0.3"
+          },
+          "id": "rJZ3-B89C4",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        },
+        "rkySHL5AE": {
+          "id": "rkySHL5AE",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        }
+      },
+      "path": "@/tuto210"
+    },
+    "@/tuto211": {
+      "comments": {
+        "BkBbvI9CV": {
+          "content": "time to put it all together! use the 'concat' node to compile the outputs of the three if-else statements. \nConcat is a less elaborate version of 'join'.\n\nUpload the code and voila! You have uploaded your first program in XOD",
+          "id": "BkBbvI9CV",
+          "position": {
+            "x": -7,
+            "y": -2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 5,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "BJcf4UI5AE": {
+          "id": "BJcf4UI5AE",
+          "input": {
+            "nodeId": "H1lGVIUcAV",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "H1GNUUcAN",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "ByCG4ULqA4": {
+          "id": "ByCG4ULqA4",
+          "input": {
+            "nodeId": "B17zVLLcRN",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "rkbfVIL90N",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "ByO3UIcRV": {
+          "id": "ByO3UIcRV",
+          "input": {
+            "nodeId": "r1us8I90V",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "rJcP8I9CE",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "H17gf4UL90V": {
+          "id": "H17gf4UL90V",
+          "input": {
+            "nodeId": "BkYMVU85AE",
+            "pinKey": "r1tz8CdBDkb"
+          },
+          "output": {
+            "nodeId": "rkbfVIL90N",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "HJi2UU9AE": {
+          "id": "HJi2UU9AE",
+          "input": {
+            "nodeId": "ry05L850N",
+            "pinKey": "B1TSE9tZ-"
+          },
+          "output": {
+            "nodeId": "r1us8I90V",
+            "pinKey": "HJrBNr4dG"
+          }
+        },
+        "HJjMN8UqC4": {
+          "id": "HJjMN8UqC4",
+          "input": {
+            "nodeId": "rkbfVIL90N",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "H1GNUUcAN",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "HyhMV8U50V": {
+          "id": "HyhMV8U50V",
+          "input": {
+            "nodeId": "HkfGEIU5RV",
+            "pinKey": "rJg00Nhe-"
+          },
+          "output": {
+            "nodeId": "H1GNUUcAN",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "HyxgzVLUqCN": {
+          "id": "HyxgzVLUqCN",
+          "input": {
+            "nodeId": "ByLG48L9CE",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "SJDz4IL90N",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "SkaSII9RV": {
+          "id": "SkaSII9RV",
+          "input": {
+            "nodeId": "BJJSI8cAN",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "SJuS8U9AN",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "SyQSUI904": {
+          "id": "SyQSUI904",
+          "input": {
+            "nodeId": "BJJSI8cAN",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "BkYMVU85AE",
+            "pinKey": "rJqfIRdHwkW"
+          }
+        },
+        "SyTzVIUqRE": {
+          "id": "SyTzVIUqRE",
+          "input": {
+            "nodeId": "B17zVLLcRN",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "BkNfE8L9A4",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "Syc_8U504": {
+          "id": "Syc_8U504",
+          "input": {
+            "nodeId": "ByS_U89CE",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "rJcP8I9CE",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "rJExG4885R4": {
+          "id": "rJExG4885R4",
+          "input": {
+            "nodeId": "BkYMVU85AE",
+            "pinKey": "S1dG8AOBPJW"
+          },
+          "output": {
+            "nodeId": "HkfGEIU5RV",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "ryGgfVI89CV": {
+          "id": "ryGgfVI89CV",
+          "input": {
+            "nodeId": "ByLG48L9CE",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "HkfGEIU5RV",
+            "pinKey": "B19RYS3lW"
+          }
+        }
+      },
+      "nodes": {
+        "B17zVLLcRN": {
+          "id": "B17zVLLcRN",
+          "position": {
+            "x": -1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "BJJSI8cAN": {
+          "id": "BJJSI8cAN",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "BkNfE8L9A4": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too dim\""
+          },
+          "id": "BkNfE8L9A4",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "BkYMVU85AE": {
+          "id": "BkYMVU85AE",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/nor"
+        },
+        "ByLG48L9CE": {
+          "id": "ByLG48L9CE",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "ByS_U89CE": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "ByS_U89CE",
+          "position": {
+            "x": -7,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "H1GNUUcAN": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "H1GNUUcAN",
+          "position": {
+            "x": 2,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "H1lGVIUcAV": {
+          "id": "H1lGVIUcAV",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "HkfGEIU5RV": {
+          "boundLiterals": {
+            "HJbACN3gb": "0.8"
+          },
+          "id": "HkfGEIU5RV",
+          "position": {
+            "x": 5,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/greater"
+        },
+        "SJDz4IL90N": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too bright\""
+          },
+          "id": "SJDz4IL90N",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "SJuS8U9AN": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"all ok\""
+          },
+          "id": "SJuS8U9AN",
+          "position": {
+            "x": 4,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "r1us8I90V": {
+          "boundLiterals": {
+            "HynENHNOz": "\"pot val\"",
+            "rJGQNB4df": "\" :\""
+          },
+          "id": "r1us8I90V",
+          "position": {
+            "x": -4,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/join"
+        },
+        "rJcP8I9CE": {
+          "id": "rJcP8I9CE",
+          "position": {
+            "x": -6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "rkbfVIL90N": {
+          "boundLiterals": {
+            "SJqZ8COrDkW": "0.3"
+          },
+          "id": "rkbfVIL90N",
+          "position": {
+            "x": -1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        },
+        "ry05L850N": {
+          "boundLiterals": {
+            "rJlYT7EfW": "38h"
+          },
+          "id": "ry05L850N",
+          "position": {
+            "x": -6,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        }
+      },
+      "path": "@/tuto211"
+    },
+    "@/tuto212": {
+      "comments": {
+        "SyOEtU5RV": {
+          "content": "our program from tuto 211 was cool but a bit chunky. Now let's turn it into its own node to directly have it interact with the LCD screen.\nthe xod-light-sensor at the bottom of this tutorial list is the whole program we have just finished building.\nOpen it in a new window to examine it. Then come back here and try dragging the xod-light-sensor in this window and see what happens. Let's meet at tuto 213 next!",
+          "id": "SyOEtU5RV",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 10,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "HJHtaOL5AN": {
+          "id": "HJHtaOL5AN",
+          "input": {
+            "nodeId": "SkZYpdU5CN",
+            "pinKey": "B1TSE9tZ-"
+          },
+          "output": {
+            "nodeId": "BJzY6_UqR4",
+            "pinKey": "HJrBNr4dG"
+          }
+        },
+        "rk4Yad8qRN": {
+          "id": "rk4Yad8qRN",
+          "input": {
+            "nodeId": "BJzY6_UqR4",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "rJFpOI9RN",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "rk7YTuIqRE": {
+          "id": "rk7YTuIqRE",
+          "input": {
+            "nodeId": "HJxFpu8qC4",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "rJFpOI9RN",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "BJzY6_UqR4": {
+          "boundLiterals": {
+            "HynENHNOz": "\"pot val\"",
+            "rJGQNB4df": "\" :\""
+          },
+          "id": "BJzY6_UqR4",
+          "position": {
+            "x": 7,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/join"
+        },
+        "HJxFpu8qC4": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "HJxFpu8qC4",
+          "position": {
+            "x": 4,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "SkZYpdU5CN": {
+          "boundLiterals": {
+            "rJlYT7EfW": "38h"
+          },
+          "id": "SkZYpdU5CN",
+          "position": {
+            "x": 5,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "rJFpOI9RN": {
+          "id": "rJFpOI9RN",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        }
+      },
+      "path": "@/tuto212"
+    },
+    "@/tuto213": {
+      "comments": {
+        "HkJzjUqAV": {
+          "content": "As we can see, we can upload some nodes but we cannot plug anything in an out of this one. We have to modify the xod-light-sensor for it to work. Go to xod-light-sensor1 to make it work. When you're done, drag the xod-ligh-sensor1 in to see if it worked.",
+          "id": "HkJzjUqAV",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 10,
+            "units": "slots"
+          }
+        },
+        "r17PCIc0N": {
+          "content": "if it worked, you should be able to connect the orange OUT pin to L2 of the LCD node. Congratulations.\nLet's meet at tuto 214 for more fun stuff.",
+          "id": "r17PCIc0N",
+          "position": {
+            "x": 1,
+            "y": 5,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 9,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1rlboI9RE": {
+          "id": "B1rlboI9RE",
+          "input": {
+            "nodeId": "rkZg-jU904",
+            "pinKey": "B1TSE9tZ-"
+          },
+          "output": {
+            "nodeId": "BkMgZjI504",
+            "pinKey": "HJrBNr4dG"
+          }
+        },
+        "BkEl-iUqRE": {
+          "id": "BkEl-iUqRE",
+          "input": {
+            "nodeId": "BkMgZjI504",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "BJe-sIqCV",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "Sy7eZjU5CE": {
+          "id": "Sy7eZjU5CE",
+          "input": {
+            "nodeId": "rkxgZoUcAE",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "BJe-sIqCV",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "BJe-sIqCV": {
+          "id": "BJe-sIqCV",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "BkMgZjI504": {
+          "boundLiterals": {
+            "HynENHNOz": "\"pot val\"",
+            "rJGQNB4df": "\" :\""
+          },
+          "id": "BkMgZjI504",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/join"
+        },
+        "SJPZjUqAE": {
+          "id": "SJPZjUqAE",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "@/xod-light-sensor"
+        },
+        "rkZg-jU904": {
+          "boundLiterals": {
+            "rJlYT7EfW": "38h"
+          },
+          "id": "rkZg-jU904",
+          "position": {
+            "x": 3,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "rkxgZoUcAE": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "rkxgZoUcAE",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        }
+      },
+      "path": "@/tuto213"
+    },
+    "@/tuto214": {
+      "comments": {
+        "S1jg1vqAN": {
+          "content": "Now we're going going to use a NeoPixel. Start by uploading two new libraries : \nbradzilla84/neopixel\nand\nawgrover/adafruitneopixel\nopen their examples and try to upload the codes.\nNeopixels should be plugged using only one set of 3 pins: GND, VCC and DIN. Do not plug the set of pins containing DOUT.",
+          "id": "S1jg1vqAN",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 7,
+            "units": "slots"
+          }
+        }
+      },
+      "path": "@/tuto214"
+    },
+    "@/tuto215": {
+      "comments": {
+        "rJijgv9AN": {
+          "content": "Remember, the output value of the pot are continuous and vary between 0 and 1\n\nTo convert that to integr=ers ranging 0-16 Add first a multiply node and then a round node to the val output. Connect the final output to 'pixelnumber and 'pulse.",
+          "id": "rJijgv9AN",
+          "position": {
+            "x": 7,
+            "y": 1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 3,
+            "width": 6,
+            "units": "slots"
+          }
+        },
+        "ryA-gPqC4": {
+          "content": "Now let's try to connect the neopixel to an analog sensor and make it react to the output. The first thing we have to do is to convert the outpt value of the analog sensor to a format that fits the Neopixel. \n\nPixelnumber takes integers between 0 and the max number of LEDs on the Neopixel (in our case, 16",
+          "id": "ryA-gPqC4",
+          "position": {
+            "x": -3,
+            "y": 0,
+            "units": "slots"
+          },
+          "size": {
+            "height": 4,
+            "width": 4,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "HySjCyP50N": {
+          "id": "HySjCyP50N",
+          "input": {
+            "nodeId": "B1ljAkwcCN",
+            "pinKey": "Bkpl_-P67"
+          },
+          "output": {
+            "nodeId": "B1MsRyvcRE",
+            "pinKey": "rkEf9yw6m"
+          }
+        },
+        "SJIiA1wcAN": {
+          "id": "SJIiA1wcAN",
+          "input": {
+            "nodeId": "HyWoCkwcRE",
+            "pinKey": "SJgtrAgDa7"
+          },
+          "output": {
+            "nodeId": "B1ljAkwcCN",
+            "pinKey": "H1G6xd-vT7"
+          }
+        },
+        "SyEoAJv5CV": {
+          "id": "SyEoAJv5CV",
+          "input": {
+            "nodeId": "HyWoCkwcRE",
+            "pinKey": "Syv36gPaX"
+          },
+          "output": {
+            "nodeId": "B1ljAkwcCN",
+            "pinKey": "rygaldWDpX"
+          }
+        },
+        "r1QiCyD9C4": {
+          "id": "r1QiCyD9C4",
+          "input": {
+            "nodeId": "B1ljAkwcCN",
+            "pinKey": "SkXpgdWwT7"
+          },
+          "output": {
+            "nodeId": "H1s0kDqAV",
+            "pinKey": "ByAIWR_UZ"
+          }
+        }
+      },
+      "nodes": {
+        "B1MsRyvcRE": {
+          "boundLiterals": {
+            "SJynGgvT7": "16",
+            "rJ-hGlv6Q": "20"
+          },
+          "id": "B1MsRyvcRE",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/neopixel-device"
+        },
+        "B1ljAkwcCN": {
+          "id": "B1ljAkwcCN",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/set-all-to-off-neopixel"
+        },
+        "H1s0kDqAV": {
+          "id": "H1s0kDqAV",
+          "position": {
+            "x": 5,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "HyWoCkwcRE": {
+          "boundLiterals": {
+            "H1KaaePam": "0",
+            "SJgtrAgDa7": "Never",
+            "rJg0agw6m": "255"
+          },
+          "id": "HyWoCkwcRE",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/setpixelcolor-neopixel"
+        },
+        "S1UxlDqCV": {
+          "id": "S1UxlDqCV",
+          "position": {
+            "x": 7,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        }
+      },
+      "path": "@/tuto215"
+    },
+    "@/tuto216": {
+      "comments": {
+        "BJ-RbvqRV": {
+          "content": "The result from tuto 215 should look something like this. Now that you've got a grasp on how communicating with the neopixel works, try to add another king of analog sensor, or delay the rate of disapearance of the LED by adding a delay node.",
+          "id": "BJ-RbvqRV",
+          "position": {
+            "x": 0,
+            "y": -2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 9,
+            "units": "slots"
+          }
+        },
+        "S1W9Ww5R4": {
+          "content": "Congratulations for reaching that point! You are now equipped to create small programs and create nodes out of them. You can also now use different types of display for your results. Way to go!",
+          "id": "S1W9Ww5R4",
+          "position": {
+            "x": 0,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 10,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1BP-wqCV": {
+          "id": "B1BP-wqCV",
+          "input": {
+            "nodeId": "B1R8bP5RV",
+            "pinKey": "BkF78AurDJW"
+          },
+          "output": {
+            "nodeId": "Syc8Zw9CE",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        },
+        "BJ4zLWw9AN": {
+          "id": "BJ4zLWw9AN",
+          "input": {
+            "nodeId": "rkgMUZwqRN",
+            "pinKey": "SkXpgdWwT7"
+          },
+          "output": {
+            "nodeId": "HyfLbP9C4",
+            "pinKey": "ByAIWR_UZ"
+          }
+        },
+        "BJ_v-v5RE": {
+          "id": "BJ_v-v5RE",
+          "input": {
+            "nodeId": "BkbfUbP9AV",
+            "pinKey": "H1KaaePam"
+          },
+          "output": {
+            "nodeId": "B1R8bP5RV",
+            "pinKey": "rkO7L0uSP1Z"
+          }
+        },
+        "H1zwZvqA4": {
+          "id": "H1zwZvqA4",
+          "input": {
+            "nodeId": "Syc8Zw9CE",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "BkQGIbvcAV",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "HkUzI-P5C4": {
+          "id": "HkUzI-P5C4",
+          "input": {
+            "nodeId": "rkgMUZwqRN",
+            "pinKey": "Bkpl_-P67"
+          },
+          "output": {
+            "nodeId": "BJMzLWwc04",
+            "pinKey": "rkEf9yw6m"
+          }
+        },
+        "SyoPbvq04": {
+          "id": "SyoPbvq04",
+          "input": {
+            "nodeId": "HyfLbP9C4",
+            "pinKey": "BkjI-COLb"
+          },
+          "output": {
+            "nodeId": "B1R8bP5RV",
+            "pinKey": "rkO7L0uSP1Z"
+          }
+        },
+        "rJBzU-PcRN": {
+          "id": "rJBzU-PcRN",
+          "input": {
+            "nodeId": "BkbfUbP9AV",
+            "pinKey": "Syv36gPaX"
+          },
+          "output": {
+            "nodeId": "rkgMUZwqRN",
+            "pinKey": "rygaldWDpX"
+          }
+        },
+        "rJwM8Wv5R4": {
+          "id": "rJwM8Wv5R4",
+          "input": {
+            "nodeId": "BkbfUbP9AV",
+            "pinKey": "SJgtrAgDa7"
+          },
+          "output": {
+            "nodeId": "rkgMUZwqRN",
+            "pinKey": "H1G6xd-vT7"
+          }
+        }
+      },
+      "nodes": {
+        "B1R8bP5RV": {
+          "id": "B1R8bP5RV",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/math/round"
+        },
+        "BJMzLWwc04": {
+          "boundLiterals": {
+            "SJynGgvT7": "16",
+            "rJ-hGlv6Q": "20"
+          },
+          "id": "BJMzLWwc04",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/neopixel-device"
+        },
+        "BkQGIbvcAV": {
+          "id": "BkQGIbvcAV",
+          "position": {
+            "x": 6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "BkbfUbP9AV": {
+          "boundLiterals": {
+            "H1KaaePam": "0",
+            "SJgtrAgDa7": "Never",
+            "rJg0agw6m": "255"
+          },
+          "id": "BkbfUbP9AV",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/setpixelcolor-neopixel"
+        },
+        "HyfLbP9C4": {
+          "id": "HyfLbP9C4",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "Syc8Zw9CE": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "16"
+          },
+          "id": "Syc8Zw9CE",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/multiply"
+        },
+        "rkgMUZwqRN": {
+          "id": "rkgMUZwqRN",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "bradzilla84/neopixel/set-all-to-off-neopixel"
+        }
+      },
+      "path": "@/tuto216"
+    },
+    "@/xod-light-sensor": {
+      "links": {
+        "By0eZFLcC4": {
+          "id": "By0eZFLcC4",
+          "input": {
+            "nodeId": "rJmxbF85RN",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "rkZxWtUc0V",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "ByNgebtIcAE": {
+          "id": "ByNgebtIcAE",
+          "input": {
+            "nodeId": "S1_gZK8cCV",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "rkKgZFIqRE",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "H1bxlZFL9CV": {
+          "id": "H1bxlZFL9CV",
+          "input": {
+            "nodeId": "HJwgWFL5AE",
+            "pinKey": "r1tz8CdBDkb"
+          },
+          "output": {
+            "nodeId": "rkZxWtUc0V",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "HJXexZtUcRV": {
+          "id": "HJXexZtUcRV",
+          "input": {
+            "nodeId": "S1_gZK8cCV",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "HJwgWFL5AE",
+            "pinKey": "rJqfIRdHwkW"
+          }
+        },
+        "S1Lft89CV": {
+          "id": "S1Lft89CV",
+          "input": {
+            "nodeId": "SysbFIcA4",
+            "pinKey": "BkeKcj6ZZ-$1"
+          },
+          "output": {
+            "nodeId": "BySgWFI9C4",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "S1nlWFU9RE": {
+          "id": "S1nlWFU9RE",
+          "input": {
+            "nodeId": "r1zeZFUqRN",
+            "pinKey": "rJg00Nhe-"
+          },
+          "output": {
+            "nodeId": "rylbFL50V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "SJMlxbFU9RE": {
+          "id": "SJMlxbFU9RE",
+          "input": {
+            "nodeId": "HJwgWFL5AE",
+            "pinKey": "S1dG8AOBPJW"
+          },
+          "output": {
+            "nodeId": "r1zeZFUqRN",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "SJbGt89RE": {
+          "id": "SJbGt89RE",
+          "input": {
+            "nodeId": "SysbFIcA4",
+            "pinKey": "Hkqu9oaWb"
+          },
+          "output": {
+            "nodeId": "rJmxbF85RN",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "SJjlZYU5R4": {
+          "id": "SJjlZYU5R4",
+          "input": {
+            "nodeId": "rkZxWtUc0V",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "rylbFL50V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "SyJexbF890N": {
+          "id": "SyJexbF890N",
+          "input": {
+            "nodeId": "BySgWFI9C4",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "S18e-YU5C4",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "r1TgbK8q0N": {
+          "id": "r1TgbK8q0N",
+          "input": {
+            "nodeId": "rJmxbF85RN",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "SJVxZF8904",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "rJQzFLcAV": {
+          "id": "rJQzFLcAV",
+          "input": {
+            "nodeId": "SysbFIcA4",
+            "pinKey": "BkeKcj6ZZ"
+          },
+          "output": {
+            "nodeId": "S1_gZK8cCV",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "rJlxebYLcC4": {
+          "id": "rJlxebYLcC4",
+          "input": {
+            "nodeId": "BySgWFI9C4",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "r1zeZFUqRN",
+            "pinKey": "B19RYS3lW"
+          }
+        }
+      },
+      "nodes": {
+        "BySgWFI9C4": {
+          "id": "BySgWFI9C4",
+          "position": {
+            "x": 6,
+            "y": 2.75,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "HJwgWFL5AE": {
+          "id": "HJwgWFL5AE",
+          "position": {
+            "x": 3,
+            "y": 1.75,
+            "units": "slots"
+          },
+          "type": "xod/core/nor"
+        },
+        "S18e-YU5C4": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too bright\""
+          },
+          "id": "S18e-YU5C4",
+          "position": {
+            "x": 7,
+            "y": 1.75,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "S1_gZK8cCV": {
+          "id": "S1_gZK8cCV",
+          "position": {
+            "x": 3,
+            "y": 2.75,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "SJVxZF8904": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too dim\""
+          },
+          "id": "SJVxZF8904",
+          "position": {
+            "x": 1,
+            "y": 1.75,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "SysbFIcA4": {
+          "arityLevel": 2,
+          "id": "SysbFIcA4",
+          "position": {
+            "x": 2,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/core/concat"
+        },
+        "r1zeZFUqRN": {
+          "boundLiterals": {
+            "HJbACN3gb": "0.8"
+          },
+          "id": "r1zeZFUqRN",
+          "position": {
+            "x": 6,
+            "y": 0.75,
+            "units": "slots"
+          },
+          "type": "xod/core/greater"
+        },
+        "rJmxbF85RN": {
+          "id": "rJmxbF85RN",
+          "position": {
+            "x": 0,
+            "y": 2.75,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "rkKgZFIqRE": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"all ok\""
+          },
+          "id": "rkKgZFIqRE",
+          "position": {
+            "x": 5,
+            "y": 1.75,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "rkZxWtUc0V": {
+          "boundLiterals": {
+            "SJqZ8COrDkW": "0.3"
+          },
+          "id": "rkZxWtUc0V",
+          "position": {
+            "x": 0,
+            "y": 0.75,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        },
+        "rylbFL50V": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "rylbFL50V",
+          "position": {
+            "x": 3,
+            "y": -0.25,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        }
+      },
+      "path": "@/xod-light-sensor"
+    },
+    "@/xod-light-sensor1": {
+      "comments": {
+        "BJhA38c0V": {
+          "content": "What was missing in the first light sensor node were the input and output. They allow communication between the different patches. We have added the first three inputs/outputs that need to be connected with this node. Now it is your turn to add the three output nodes. Look for them by searching patch-nodes/output",
+          "id": "BJhA38c0V",
+          "position": {
+            "x": -1,
+            "y": -1,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 6,
+            "units": "slots"
+          }
+        },
+        "rJhRpL9A4": {
+          "content": "Add an output-number and connect it to the VAL output of the analog sensor. Add a couple more output-pulse to be connected to DONE and ERR of the same port. Change their names.\nThen go back to tuto 213 and try dragging the patch again.",
+          "id": "rJhRpL9A4",
+          "position": {
+            "x": 9,
+            "y": 5,
+            "units": "slots"
+          },
+          "size": {
+            "height": 2,
+            "width": 5,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1mxiPnL5C4": {
+          "id": "B1mxiPnL5C4",
+          "input": {
+            "nodeId": "SyDiP385CE",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "rJuovh85CV",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "ByWejDhU5C4": {
+          "id": "ByWejDhU5C4",
+          "input": {
+            "nodeId": "ByIjv3L504",
+            "pinKey": "S1dG8AOBPJW"
+          },
+          "output": {
+            "nodeId": "rJWsv3LqAN",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "H1kljwhI9AN": {
+          "id": "H1kljwhI9AN",
+          "input": {
+            "nodeId": "HJ4iD2890V",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "rJWsv3LqAN",
+            "pinKey": "B19RYS3lW"
+          }
+        },
+        "H1sjv3850N": {
+          "id": "H1sjv3850N",
+          "input": {
+            "nodeId": "rJWsv3LqAN",
+            "pinKey": "rJg00Nhe-"
+          },
+          "output": {
+            "nodeId": "Hyov3U50V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "HyUeiP3LqR4": {
+          "id": "HyUeiP3LqR4",
+          "input": {
+            "nodeId": "rkKovnIcAV",
+            "pinKey": "BkeKcj6ZZ-$1"
+          },
+          "output": {
+            "nodeId": "HJ4iD2890V",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "S1GgjDhL9C4": {
+          "id": "S1GgjDhL9C4",
+          "input": {
+            "nodeId": "SyDiP385CE",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "ByIjv3L504",
+            "pinKey": "rJqfIRdHwkW"
+          }
+        },
+        "S1csv3L9R4": {
+          "id": "S1csv3L9R4",
+          "input": {
+            "nodeId": "HygjDhIqR4",
+            "pinKey": "HJjZLRdBw1-"
+          },
+          "output": {
+            "nodeId": "Hyov3U50V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "SJxs3U9CN": {
+          "id": "SJxs3U9CN",
+          "input": {
+            "nodeId": "Hyov3U50V",
+            "pinKey": "r1l3XcR17"
+          },
+          "output": {
+            "nodeId": "HJ2OhLcCE",
+            "pinKey": "__out__"
+          }
+        },
+        "Sy3oP2L5C4": {
+          "id": "Sy3oP2L5C4",
+          "input": {
+            "nodeId": "rJfov3L9C4",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "BJQjD2U9A4",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "Sy7R2IcCN": {
+          "id": "Sy7R2IcCN",
+          "input": {
+            "nodeId": "BkxAhLqAE",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "rkKovnIcAV",
+            "pinKey": "rksccsp-W"
+          }
+        },
+        "SyGo3Lq0E": {
+          "id": "SyGo3Lq0E",
+          "input": {
+            "nodeId": "Hyov3U50V",
+            "pinKey": "SkUhQ5RkQ"
+          },
+          "output": {
+            "nodeId": "rJaqhI5RE",
+            "pinKey": "__out__"
+          }
+        },
+        "Syasw2LqR4": {
+          "id": "Syasw2LqR4",
+          "input": {
+            "nodeId": "rJfov3L9C4",
+            "pinKey": "S1yZIA_rDJZ"
+          },
+          "output": {
+            "nodeId": "HygjDhIqR4",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "SygeivhI5CE": {
+          "id": "SygeivhI5CE",
+          "input": {
+            "nodeId": "ByIjv3L504",
+            "pinKey": "r1tz8CdBDkb"
+          },
+          "output": {
+            "nodeId": "HygjDhIqR4",
+            "pinKey": "HktZUCdrPkZ"
+          }
+        },
+        "Syrlov285CE": {
+          "id": "Syrlov285CE",
+          "input": {
+            "nodeId": "rkKovnIcAV",
+            "pinKey": "BkeKcj6ZZ"
+          },
+          "output": {
+            "nodeId": "SyDiP385CE",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "rJElsvh8cC4": {
+          "id": "rJElsvh8cC4",
+          "input": {
+            "nodeId": "rkKovnIcAV",
+            "pinKey": "Hkqu9oaWb"
+          },
+          "output": {
+            "nodeId": "rJfov3L9C4",
+            "pinKey": "S13xLCuHvkW"
+          }
+        },
+        "rkCjw3UcAN": {
+          "id": "rkCjw3UcAN",
+          "input": {
+            "nodeId": "HJ4iD2890V",
+            "pinKey": "ryTeUROHD1b"
+          },
+          "output": {
+            "nodeId": "HyHiv3IcRE",
+            "pinKey": "B1x2RV3eZ"
+          }
+        }
+      },
+      "nodes": {
+        "BJQjD2U9A4": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too dim\""
+          },
+          "id": "BJQjD2U9A4",
+          "position": {
+            "x": 4,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "BkxAhLqAE": {
+          "id": "BkxAhLqAE",
+          "position": {
+            "x": 5,
+            "y": 6,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-string"
+        },
+        "ByIjv3L504": {
+          "id": "ByIjv3L504",
+          "position": {
+            "x": 6,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/nor"
+        },
+        "HJ2OhLcCE": {
+          "id": "HJ2OhLcCE",
+          "label": "PORT",
+          "position": {
+            "x": 6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-port"
+        },
+        "HJ4iD2890V": {
+          "id": "HJ4iD2890V",
+          "position": {
+            "x": 9,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "HyHiv3IcRE": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"too bright\""
+          },
+          "id": "HyHiv3IcRE",
+          "position": {
+            "x": 10,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "HygjDhIqR4": {
+          "boundLiterals": {
+            "SJqZ8COrDkW": "0.3"
+          },
+          "id": "HygjDhIqR4",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/less"
+        },
+        "Hyov3U50V": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "Hyov3U50V",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "SyDiP385CE": {
+          "id": "SyDiP385CE",
+          "position": {
+            "x": 6,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "rJWsv3LqAN": {
+          "boundLiterals": {
+            "HJbACN3gb": "0.8"
+          },
+          "id": "rJWsv3LqAN",
+          "position": {
+            "x": 9,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/greater"
+        },
+        "rJaqhI5RE": {
+          "id": "rJaqhI5RE",
+          "label": "UPD",
+          "position": {
+            "x": 7,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "rJfov3L9C4": {
+          "id": "rJfov3L9C4",
+          "position": {
+            "x": 3,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "rJuovh85CV": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "\"all ok\""
+          },
+          "id": "rJuovh85CV",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/constant-string"
+        },
+        "rkKovnIcAV": {
+          "arityLevel": 2,
+          "id": "rkKovnIcAV",
+          "position": {
+            "x": 5,
+            "y": 5,
+            "units": "slots"
+          },
+          "type": "xod/core/concat"
+        }
+      },
+      "path": "@/xod-light-sensor1"
+    }
+  }
+}
