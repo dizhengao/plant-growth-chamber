@@ -17,37 +17,26 @@
             "pinKey": "SJKXmhBw0w"
           }
         },
-        "Bk1c-UPCw": {
-          "id": "Bk1c-UPCw",
+        "HJq7iSiCD": {
+          "id": "HJq7iSiCD",
           "input": {
-            "nodeId": "BkEvZUv0w",
-            "pinKey": "HJAq-A_8-"
+            "nodeId": "B1mdw58qCw",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "r1AU9BsCv",
+            "pinKey": "BJ4r1HW-N"
+          }
+        },
+        "HkUmsBj0D": {
+          "id": "HkUmsBj0D",
+          "input": {
+            "nodeId": "r1AU9BsCv",
+            "pinKey": "H1vlorjCw"
           },
           "output": {
             "nodeId": "r1_AhSvAv",
             "pinKey": "HJU8CE2lW"
-          }
-        },
-        "SJnqbIv0w": {
-          "id": "SJnqbIv0w",
-          "input": {
-            "nodeId": "rkOqW8DCD",
-            "pinKey": "HkXK-dGob"
-          },
-          "output": {
-            "nodeId": "BkEvZUv0w",
-            "pinKey": "r1yhZRd8W"
-          }
-        },
-        "r1_SX8v0w": {
-          "id": "r1_SX8v0w",
-          "input": {
-            "nodeId": "HkNBQUvCP",
-            "pinKey": "HkXK-dGob"
-          },
-          "output": {
-            "nodeId": "SyFXmLvAw",
-            "pinKey": "r1xlQQnrv0D"
           }
         },
         "rkzEQ8D0P": {
@@ -63,33 +52,24 @@
         }
       },
       "nodes": {
-        "BkEvZUv0w": {
-          "id": "BkEvZUv0w",
+        "B1mdw58qCw": {
+          "id": "B1mdw58qCw",
           "position": {
-            "x": 15,
-            "y": 1,
-            "units": "slots"
-          },
-          "type": "xod/core/count"
-        },
-        "H1WO3SDCP": {
-          "id": "H1WO3SDCP",
-          "position": {
-            "x": 5,
+            "x": 21,
             "y": 2,
             "units": "slots"
           },
           "size": {
             "height": 1,
-            "width": 3,
+            "width": 9,
             "units": "slots"
           },
           "type": "xod/debug/watch"
         },
-        "HkNBQUvCP": {
-          "id": "HkNBQUvCP",
+        "H1WO3SDCP": {
+          "id": "H1WO3SDCP",
           "position": {
-            "x": 9,
+            "x": 13,
             "y": 2,
             "units": "slots"
           },
@@ -102,15 +82,27 @@
         },
         "SyFXmLvAw": {
           "boundLiterals": {
-            "Sk4Xm3SDCv": "A1"
+            "Sk4Xm3SDCv": "A0"
           },
           "id": "SyFXmLvAw",
           "position": {
-            "x": 8,
+            "x": 13,
             "y": 1,
             "units": "slots"
           },
           "type": "@/ntc-sensor-node-luna-project-copy"
+        },
+        "r1AU9BsCv": {
+          "boundLiterals": {
+            "SJOjkr--E": "48h"
+          },
+          "id": "r1AU9BsCv",
+          "position": {
+            "x": 21,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "gst/lm75atempsensor/lm75a-temp-sensor"
         },
         "r1_AhSvAv": {
           "boundLiterals": {
@@ -123,20 +115,6 @@
             "units": "slots"
           },
           "type": "xod/core/clock"
-        },
-        "rkOqW8DCD": {
-          "id": "rkOqW8DCD",
-          "position": {
-            "x": 15,
-            "y": 2,
-            "units": "slots"
-          },
-          "size": {
-            "height": 1,
-            "width": 3,
-            "units": "slots"
-          },
-          "type": "xod/debug/watch"
         }
       },
       "path": "@/main"
