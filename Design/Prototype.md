@@ -24,7 +24,7 @@ This is to clarify priority of doing things:
 
 ### Sensor placement
 
-Light sensor: in the middle of the plant growing board?
+Light sensor: near the growing board facing upward
 Temperature sensor: on the wall
 Humidity sensor: on the wall (how do we tell if the plant needs to be watered)
 
@@ -47,8 +47,11 @@ Large polystyrene box +
 | ---------- | --------- | -------- | -------- | ----------- |
 | NTC thermistors    | NO       |   [Steinhart-Hart equation](https://learn.adafruit.com/thermistor/using-a-thermistor) | Analog     | TBD|
 
+| Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
+| ---------- | --------- | -------- | -------- | ----------- |
+| LM75   | NO       |   Read directly through I2C bus | Digital | TBD|
 
-Will try the built on board sensor to agree with calibration tomorrow. This one is an I2C device with address
+Are the two sensors agree?
 
 ### Light Sensor
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
