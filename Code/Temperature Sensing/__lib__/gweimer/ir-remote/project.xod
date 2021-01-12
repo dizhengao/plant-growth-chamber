@@ -1,0 +1,5 @@
+{
+  "description": "Read IR remote",
+  "name": "ir-remote",
+  "version": "0.0.7"
+}

@@ -1,0 +1,311 @@
+{
+  "comments": [
+    {
+      "content": "Arity lvl",
+      "id": "S1L1nw0af",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 1
+      }
+    },
+    {
+      "content": "old val",
+      "id": "r1TWhDRaf",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 1
+      }
+    }
+  ],
+  "description": "Calculate a running AVG. Variadic is dummy pin to select # of values to AVG. Unlabelled pins are for internal use only.",
+  "links": [
+    {
+      "id": "B16QKwAaG",
+      "input": {
+        "nodeId": "B1yXFDCpM",
+        "pinKey": "BJnQUR_BwyZ"
+      },
+      "output": {
+        "nodeId": "H1z3_wRaf",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1MNc-XwN",
+      "input": {
+        "nodeId": "Sy_Uf_Apz",
+        "pinKey": "BJnQUR_BwyZ"
+      },
+      "output": {
+        "nodeId": "B1T_uDC6G",
+        "pinKey": "Hkje5Z7vV"
+      }
+    },
+    {
+      "id": "B1am5Wmv4",
+      "input": {
+        "nodeId": "r1nxKwRaz",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1T_uDC6G",
+        "pinKey": "SyRZcWQDN"
+      }
+    },
+    {
+      "id": "ByMPfO0TG",
+      "input": {
+        "nodeId": "rylqFD0pM",
+        "pinKey": "SkdIRuBD1b"
+      },
+      "output": {
+        "nodeId": "Sy_Uf_Apz",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "H1SSf_06f",
+      "input": {
+        "nodeId": "BkUmMu0TG",
+        "pinKey": "SJ4zUC_BD1-"
+      },
+      "output": {
+        "nodeId": "rkHdKD0az",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hkmrf_Rpf",
+      "input": {
+        "nodeId": "BkUmMu0TG",
+        "pinKey": "B1GfLR_SPk-"
+      },
+      "output": {
+        "nodeId": "H1z3_wRaf",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1k4YPA6z",
+      "input": {
+        "nodeId": "HJKGFDRTM",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1yXFDCpM",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "SJ98GORpf",
+      "input": {
+        "nodeId": "Sy_Uf_Apz",
+        "pinKey": "HkqmLAOrD1W"
+      },
+      "output": {
+        "nodeId": "BkUmMu0TG",
+        "pinKey": "BkQzLCurwJZ"
+      }
+    },
+    {
+      "id": "SJeXFWXPN",
+      "input": {
+        "nodeId": "B1T_uDC6G",
+        "pinKey": "Sk7lKZmDE"
+      },
+      "output": {
+        "nodeId": "ry1jOvRTz",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkXc_DCpf",
+      "input": {
+        "nodeId": "B1T_uDC6G",
+        "pinKey": "BkbbbL0aG"
+      },
+      "output": {
+        "nodeId": "rynF_vAaf",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJucFvRaG",
+      "input": {
+        "nodeId": "rylqFD0pM",
+        "pinKey": "BytUCdHD1-"
+      },
+      "output": {
+        "nodeId": "B1yXFDCpM",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "rkcqKv0pz",
+      "input": {
+        "nodeId": "Sy6dFwR6z",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rylqFD0pM",
+        "pinKey": "BkqLCOSw1W"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1T_uDC6G",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/queue-buffer"
+    },
+    {
+      "boundLiterals": {
+        "HkqmLAOrD1W": "1"
+      },
+      "id": "B1yXFDCpM",
+      "label": "+1",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "xod/core/add"
+    },
+    {
+      "id": "BkUmMu0TG",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/core/multiply"
+    },
+    {
+      "description": "Only to select depth of queue, pin itself is not used.",
+      "id": "H12GqwApG",
+      "label": "dumy",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "internal use only",
+      "id": "H1z3_wRaf",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "internal use only",
+      "id": "HJKGFDRTM",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "HJj7cwR6z",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/variadic-1"
+    },
+    {
+      "description": "AVG of numbers currently in the queue",
+      "id": "Sy6dFwR6z",
+      "label": "AVG",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "Sy_Uf_Apz",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/core/add"
+    },
+    {
+      "description": "internal use only",
+      "id": "r1nxKwRaz",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Unused. Accumulator pin to match AVG output",
+      "id": "rkHdKD0az",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Value to add to the queue on UPD",
+      "id": "ry1jOvRTz",
+      "label": "VAL",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "rylqFD0pM",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/core/divide"
+    },
+    {
+      "description": "Push another value onto the queue",
+      "id": "rynF_vAaf",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

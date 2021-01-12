@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "B1OjlaOZE",
+      "label": "OUT",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "H1BbhcP-N",
+      "label": "IN",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "H1RXpBqWN",
+      "label": "SUMOUT",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "S1TwUhPb4",
+      "label": "INC",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Sk3szp_ZE",
+      "label": "INCOUT",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "SyHM25v-E",
+      "label": "STEP",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "r1kgn5Db4",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

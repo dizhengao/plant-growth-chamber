@@ -1,0 +1,57 @@
+{
+  "description": "Clear display",
+  "nodes": [
+    {
+      "id": "BJlZGghkSN",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse clear display",
+      "id": "HJMZze21B4",
+      "label": "CLR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "HJrGUHQRE",
+      "label": "1637'",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "@/output-tm1637-dev"
+    },
+    {
+      "description": "Pulse done",
+      "id": "S1N-Gg31SE",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Input from Dev",
+      "id": "SJWfg2krV",
+      "label": "1637",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tm1637-dev"
+    }
+  ]
+}

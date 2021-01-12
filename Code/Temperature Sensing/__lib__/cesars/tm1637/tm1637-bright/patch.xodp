@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "description": "Pulse done",
+      "id": "H14miO3yHN",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Brightness ON-OFF",
+      "id": "HJP7o_21rV",
+      "label": "ON",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "HJdKrHQ0N",
+      "label": "1637'",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "@/output-tm1637-dev"
+    },
+    {
+      "id": "SJlmi_nJr4",
+      "position": {
+        "units": "slots",
+        "x": -0.05,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Pulse set brightness",
+      "id": "SkfXs_h1SV",
+      "label": "SET",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "4"
+      },
+      "description": "Value level brightness 0-7",
+      "id": "r1-QiO2JrE",
+      "label": "Brightness",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Input from Dev",
+      "id": "r1Qsd2ySE",
+      "label": "1637",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tm1637-dev"
+    }
+  ]
+}

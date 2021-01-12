@@ -1,0 +1,6 @@
+{
+  "description": "Read´s the temperature from LM75A i2c temperatursensor with 11 bit (0.125°C) resolution\n 0.30.0 ready",
+  "license": "Mit",
+  "name": "lm75atempsensor",
+  "version": "1.2.0"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "Additional nodes for comparing numbers",
+  "license": "AGPL-3",
+  "name": "comparison",
+  "version": "0.1.0"
+}

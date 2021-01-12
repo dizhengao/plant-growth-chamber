@@ -1,0 +1,236 @@
+{
+  "comments": [
+    {
+      "content": "Double-click to edit comment",
+      "id": "B1ly1P7bE",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "B19ljHoAv",
+      "input": {
+        "nodeId": "SyUmhbx-E",
+        "pinKey": "SJjmdOVOW"
+      },
+      "output": {
+        "nodeId": "H1vlorjCw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "By4-MzIbN",
+      "input": {
+        "nodeId": "SkQJGf8bE",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1igU4ZW4",
+        "pinKey": "rypZF_Nub"
+      }
+    },
+    {
+      "id": "HJt7oVbWE",
+      "input": {
+        "nodeId": "Hk7KPEWb4",
+        "pinKey": "B1GfLR_SPk-"
+      },
+      "output": {
+        "nodeId": "rytMi4-b4",
+        "pinKey": "rJ2LddxlG"
+      }
+    },
+    {
+      "id": "S1JQ64WZN",
+      "input": {
+        "nodeId": "rktaR-gZE",
+        "pinKey": "rJvDQd-Jm"
+      },
+      "output": {
+        "nodeId": "S1igU4ZW4",
+        "pinKey": "SJeoE43JQ"
+      }
+    },
+    {
+      "id": "SJGPKNWW4",
+      "input": {
+        "nodeId": "S1igU4ZW4",
+        "pinKey": "SkylK_Ed-"
+      },
+      "output": {
+        "nodeId": "SJXQ2WxZE",
+        "pinKey": "rypZF_Nub"
+      }
+    },
+    {
+      "id": "SJcjJHWb4",
+      "input": {
+        "nodeId": "SyUmhbx-E",
+        "pinKey": "BkRw4E3kX"
+      },
+      "output": {
+        "nodeId": "SJOjkr--E",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sk53LNZZV",
+      "input": {
+        "nodeId": "rktaR-gZE",
+        "pinKey": "B1gEDm_W1Q"
+      },
+      "output": {
+        "nodeId": "SJXQ2WxZE",
+        "pinKey": "SJeoE43JQ"
+      }
+    },
+    {
+      "id": "rJ1wFNZbV",
+      "input": {
+        "nodeId": "SJXQ2WxZE",
+        "pinKey": "SkylK_Ed-"
+      },
+      "output": {
+        "nodeId": "SyUmhbx-E",
+        "pinKey": "Sk7BudNdZ"
+      }
+    },
+    {
+      "id": "rJM7iN--4",
+      "input": {
+        "nodeId": "rytMi4-b4",
+        "pinKey": "rkXLOulgz"
+      },
+      "output": {
+        "nodeId": "rktaR-gZE",
+        "pinKey": "r1WVwX_W1Q"
+      }
+    },
+    {
+      "id": "rJvSyBZ-V",
+      "input": {
+        "nodeId": "BJ4r1HW-N",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Hk7KPEWb4",
+        "pinKey": "BkQzLCurwJZ"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJ4r1HW-N",
+      "label": "Temp.out",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 7
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "H1vlorjCw",
+      "label": "SEND",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "SJ4zUC_BD1-": "0.125"
+      },
+      "id": "Hk7KPEWb4",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 6
+      },
+      "type": "xod/core/multiply"
+    },
+    {
+      "id": "S1igU4ZW4",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/i2c/read-byte"
+    },
+    {
+      "id": "SJOjkr--E",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "SJXQ2WxZE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/i2c/read-byte"
+    },
+    {
+      "id": "SkQJGf8bE",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "BkRw4E3kX": "01001000b",
+        "r1NONEn1m": "2"
+      },
+      "id": "SyUmhbx-E",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/i2c/request"
+    },
+    {
+      "id": "rktaR-gZE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "xod/bits/i16-to-number"
+    },
+    {
+      "boundLiterals": {
+        "BkvUuuleG": "5"
+      },
+      "id": "rytMi4-b4",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 5
+      },
+      "type": "xod/bits/shift-right"
+    }
+  ]
+}

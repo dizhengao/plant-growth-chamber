@@ -1,0 +1,264 @@
+{
+  "comments": [
+    {
+      "content": "See utils-example-queue for example.\n\n* all nodes of a single queue should have PUSH tied to same output. Same for POP.\n* MEM of 1st node tied to NEW of 2nd node, repeat for entire queue.\n* oMEM of last node tied to OLD of previous node, repeat for entire queue\n* In order for queue-buffers to determine data type, the links from MEM/oMEM to NEW/OLD may need to route through explicit defer(data_type) nodes\n*\n* Works well for implementing stack\n* Only partial solution for FIFO queue -- the 1st (queue_depth-1) outputs will be 0 as queue fills up\n\nI would love to implement a variadic wrapper, but I can't figure out how to feed old values back up through the cascade for POP.",
+      "id": "HkvnR8R6z",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 1
+      },
+      "size": {
+        "height": 4,
+        "units": "slots",
+        "width": 11
+      }
+    }
+  ],
+  "description": "Buffer for implementing queue with PUSH/POP functionality. Must be daisy-chained to create queue of fixed depth.",
+  "links": [
+    {
+      "id": "B1uZK-QvV",
+      "input": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "S10qrR6UZ"
+      },
+      "output": {
+        "nodeId": "Sk7lKZmDE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkUTZIRaM",
+      "input": {
+        "nodeId": "By3J-8CTz",
+        "pinKey": "HkXm80uHPyb"
+      },
+      "output": {
+        "nodeId": "SJLJ-LC6G",
+        "pinKey": "r1lQLAOBwJb"
+      }
+    },
+    {
+      "id": "BySbq-QP4",
+      "input": {
+        "nodeId": "Hkje5Z7vV",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r17_NXqCz",
+        "pinKey": "HJhXDIY9-"
+      }
+    },
+    {
+      "id": "HJE2bUATf",
+      "input": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "rJUjrCTUb"
+      },
+      "output": {
+        "nodeId": "BkIWW8C6f",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJiZFbQDV",
+      "input": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "rygjH06LW"
+      },
+      "output": {
+        "nodeId": "Sy_eFZXP4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1eTWIRpz",
+      "input": {
+        "nodeId": "SJLJ-LC6G",
+        "pinKey": "HkXm80uHPyb"
+      },
+      "output": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "S1yaHC6UW"
+      }
+    },
+    {
+      "id": "S1wONX50G",
+      "input": {
+        "nodeId": "r17_NXqCz",
+        "pinKey": "BJI7P8t9Z"
+      },
+      "output": {
+        "nodeId": "SJLJ-LC6G",
+        "pinKey": "r1lQLAOBwJb"
+      }
+    },
+    {
+      "id": "S1ykzI0az",
+      "input": {
+        "nodeId": "By3J-8CTz",
+        "pinKey": "Hy-QUR_BPkZ"
+      },
+      "output": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "rkWHDAW_f"
+      }
+    },
+    {
+      "id": "SJGnb806M",
+      "input": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "rkmiHCaIZ"
+      },
+      "output": {
+        "nodeId": "BkbbbL0aG",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sy-6EmcRz",
+      "input": {
+        "nodeId": "SJLJ-LC6G",
+        "pinKey": "Hy-QUR_BPkZ"
+      },
+      "output": {
+        "nodeId": "SJY3VQ90M",
+        "pinKey": "HJhXDIY9-"
+      }
+    },
+    {
+      "id": "r13hV79Az",
+      "input": {
+        "nodeId": "SJY3VQ90M",
+        "pinKey": "BJI7P8t9Z"
+      },
+      "output": {
+        "nodeId": "SJeoWIRaM",
+        "pinKey": "rkWHDAW_f"
+      }
+    },
+    {
+      "id": "ryTMt-EwV",
+      "input": {
+        "nodeId": "SyRZcWQDN",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "By3J-8CTz",
+        "pinKey": "r1lQLAOBwJb"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "POP value off the queue. oMEM will be value popped off the stack.",
+      "id": "BkIWW8C6f",
+      "label": "POP",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "PUSH NEW onto the queue",
+      "id": "BkbbbL0aG",
+      "label": "PUSH",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "By3J-8CTz",
+      "label": "buffer-prev",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "xod/core/buffer"
+    },
+    {
+      "id": "Hkje5Z7vV",
+      "label": "MEM",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-t1"
+    },
+    {
+      "id": "SJLJ-LC6G",
+      "label": "buffer-curr",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/core/buffer"
+    },
+    {
+      "id": "SJY3VQ90M",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 2
+      },
+      "type": "xod/core/defer"
+    },
+    {
+      "id": "SJeoWIRaM",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/core/select"
+    },
+    {
+      "id": "Sk7lKZmDE",
+      "label": "NEW",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-t1"
+    },
+    {
+      "id": "SyRZcWQDN",
+      "label": "oMEM",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-t1"
+    },
+    {
+      "id": "Sy_eFZXP4",
+      "label": "OLD",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-t1"
+    },
+    {
+      "id": "r17_NXqCz",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 4
+      },
+      "type": "xod/core/defer"
+    }
+  ]
+}

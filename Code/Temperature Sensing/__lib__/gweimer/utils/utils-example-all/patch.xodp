@@ -1,0 +1,147 @@
+{
+  "links": [
+    {
+      "id": "H1ZLPosYS",
+      "input": {
+        "nodeId": "HJhoHsiKH",
+        "pinKey": "ryTIROHwkW"
+      },
+      "output": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "BkMRNooFr"
+      }
+    },
+    {
+      "id": "H1sBDsjFr",
+      "input": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "Hk9jNsjtr"
+      },
+      "output": {
+        "nodeId": "rJwcrsotr",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "H1yLwsitH",
+      "input": {
+        "nodeId": "Sy-irsoFS",
+        "pinKey": "BJI7P8t9Z"
+      },
+      "output": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "BkMRNooFr"
+      }
+    },
+    {
+      "id": "HJarPjoFH",
+      "input": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "rkfcEjitS"
+      },
+      "output": {
+        "nodeId": "Sy-irsoFS",
+        "pinKey": "HJhXDIY9-"
+      }
+    },
+    {
+      "id": "SyBnHosYr",
+      "input": {
+        "nodeId": "HJCjSooKr",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HJhoHsiKH",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "r1lJ8PsotS",
+      "input": {
+        "nodeId": "H1KorssKS",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "BkMRNooFr"
+      }
+    },
+    {
+      "id": "rk9rviiYr",
+      "input": {
+        "nodeId": "HyrrwosFS",
+        "pinKey": "Hk9jNsjtr-$1"
+      },
+      "output": {
+        "nodeId": "B1Y9HioFr",
+        "pinKey": "Bkf4BDsmV"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1Y9HioFr",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "H1KorssKS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJCjSooKr",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJhoHsiKH",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "arityLevel": 2,
+      "id": "HyrrwosFS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/all"
+    },
+    {
+      "id": "Sy-irsoFS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/core/defer"
+    },
+    {
+      "id": "rJwcrsotr",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    }
+  ]
+}

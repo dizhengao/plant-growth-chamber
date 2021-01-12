@@ -1,0 +1,135 @@
+{
+  "links": [
+    {
+      "id": "B1gYPVw1I",
+      "input": {
+        "nodeId": "B1ddvEvkL",
+        "pinKey": "Bkh8A_Sv1-"
+      },
+      "output": {
+        "nodeId": "HyuYw7PyI",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1z_DVvJI",
+      "input": {
+        "nodeId": "BJCwDEDJ8",
+        "pinKey": "Skre8ROSv1-"
+      },
+      "output": {
+        "nodeId": "SJGuFDQPkL",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HyMKvNPyI",
+      "input": {
+        "nodeId": "BJCwDEDJ8",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "B1ddvEvkL",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "Hyx5DNwy8",
+      "input": {
+        "nodeId": "B1ddvEvkL",
+        "pinKey": "B1RU0OrDkb"
+      },
+      "output": {
+        "nodeId": "HJoKDNv1I",
+        "pinKey": "HJhXDIY9-"
+      }
+    },
+    {
+      "id": "r10KwVvkL",
+      "input": {
+        "nodeId": "HJoKDNv1I",
+        "pinKey": "BJI7P8t9Z"
+      },
+      "output": {
+        "nodeId": "BJCwDEDJ8",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "r1PFPNvk8",
+      "input": {
+        "nodeId": "S1eutvQPJ8",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1ddvEvkL",
+        "pinKey": "HkyxURuSPyW"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1ddvEvkL",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "BJCwDEDJ8",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "HJoKDNv1I",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/defer"
+    },
+    {
+      "description": "Sets stored value to 1",
+      "id": "HyuYw7PyI",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__in__": "False"
+      },
+      "description": "The stored value",
+      "id": "S1eutvQPJ8",
+      "label": "ACT",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-boolean"
+    },
+    {
+      "description": "Time to delay in seconds",
+      "id": "SJGuFDQPkL",
+      "label": "Ts",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}

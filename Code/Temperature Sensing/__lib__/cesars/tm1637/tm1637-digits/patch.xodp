@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "BkfCODm0E",
+      "label": "DIG0",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "ByXxxG2kSV",
+      "label": "1637'",
+      "position": {
+        "units": "slots",
+        "x": -0.05,
+        "y": 2
+      },
+      "type": "@/output-tm1637-dev"
+    },
+    {
+      "id": "BylRuPmA4",
+      "label": "DIG1",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "H1bCdw70E",
+      "label": "DIG2",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "H1p2q2JrV",
+      "label": "DIG3",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "SkVgxMhkr4",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "r1GlxzhJB4",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "rkxgMnJSE",
+      "label": "1637",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tm1637-dev"
+    },
+    {
+      "id": "rygleGn1SE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

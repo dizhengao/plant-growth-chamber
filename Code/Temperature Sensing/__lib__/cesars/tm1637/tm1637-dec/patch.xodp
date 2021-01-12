@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "B1d-ci1rN",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Activated leading zeros",
+      "id": "Bk4UhjySN",
+      "label": "Zeros",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "4"
+      },
+      "description": "Length in digits 0-5",
+      "id": "HJZ73skSE",
+      "label": "Length",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Input number to display",
+      "id": "S1-z5o1r4",
+      "label": "Number",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "S1Jx8S7RE",
+      "label": "1637'",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/output-tm1637-dev"
+    },
+    {
+      "description": "Position to display",
+      "id": "S1zQhs1r4",
+      "label": "Position",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SJdAYskHN",
+      "label": "1637",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/input-tm1637-dev"
+    },
+    {
+      "description": "Pulse display number",
+      "id": "Sy97ci1H4",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse done",
+      "id": "r1jtcoJrE",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}
