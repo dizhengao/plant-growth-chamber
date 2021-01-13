@@ -1,0 +1,6 @@
+{
+  "description": "Basic Functionality for NeoPixel Strip (See Examples)",
+  "license": "GPL",
+  "name": "neopixel",
+  "version": "0.0.2"
+}

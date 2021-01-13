@@ -1,0 +1,55 @@
+{
+  "description": "Sel ALL Pixel's to OFF",
+  "nodes": [
+    {
+      "id": "Bkpl_-P67",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -0.05,
+        "y": -0.05
+      },
+      "type": "@/input-neopixel-device"
+    },
+    {
+      "id": "H1G6xd-vT7",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "H1Z6xdbDaX",
+      "position": {
+        "units": "slots",
+        "x": -0.05,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse to Set",
+      "id": "SkXpgdWwT7",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "rygaldWDpX",
+      "label": "OUT",
+      "position": {
+        "units": "slots",
+        "x": -0.05,
+        "y": 2
+      },
+      "type": "@/output-neopixel-device"
+    }
+  ]
+}

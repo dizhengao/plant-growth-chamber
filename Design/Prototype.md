@@ -49,16 +49,16 @@ Large polystyrene box +
 
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
 | ---------- | --------- | -------- | -------- | ----------- |
-| LM75   | NO       |   Read directly through I2C bus | Digital | TBD|
+| LM75   | Yes (download library from bio-maker tutorial)       |   Read directly through I2C bus | Digital | TBD|
 
-Are the two sensors agree?
+The two sensors agree with each other
 
 ### Light Sensor
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
 | ---------- | --------- | -------- | -------- | ----------- |
 |GL5528 photoresistor| NO      |  TBD  | Analog | TBD|
 
-I will try and see if I can find a nod representing the sensor on the XOD custom library web.
+Analog sensor of low quality. Only roughly tells if the lights are bright enough. Can not be used for precise measurement.
 
 ### Humidity Sensor
 Needs to buy one. Will check tomorrow.
