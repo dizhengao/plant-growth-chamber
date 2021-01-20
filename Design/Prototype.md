@@ -63,6 +63,11 @@ Analog sensor of low quality. Only roughly tells if the lights are bright enough
 ### Humidity Sensor
 Needs to buy one. Will check tomorrow.
 
+Not accurate and can not tell humidity. 
+
+### LCD display
+Address should be 20h (or 0x20), the document provided by the biomarker website is wrong.
+
 
 [20210109 CHE]
 Required equipment:

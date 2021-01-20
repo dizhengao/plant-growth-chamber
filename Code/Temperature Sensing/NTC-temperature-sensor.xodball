@@ -39,6 +39,17 @@
             "pinKey": "HJU8CE2lW"
           }
         },
+        "SynjO911_": {
+          "id": "SynjO911_",
+          "input": {
+            "nodeId": "ByPidqkyu",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "r1jEB5yJO",
+            "pinKey": "B1gI0urv1W"
+          }
+        },
         "rkzEQ8D0P": {
           "id": "rkzEQ8D0P",
           "input": {
@@ -49,6 +60,17 @@
             "nodeId": "r1_AhSvAv",
             "pinKey": "HJU8CE2lW"
           }
+        },
+        "rycudcy1d": {
+          "id": "rycudcy1d",
+          "input": {
+            "nodeId": "rJhVwc11u",
+            "pinKey": "Skb2DR4JQS"
+          },
+          "output": {
+            "nodeId": "r1jEB5yJO",
+            "pinKey": "B1gI0urv1W"
+          }
         }
       },
       "nodes": {
@@ -57,6 +79,20 @@
           "position": {
             "x": 21,
             "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 9,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "ByPidqkyu": {
+          "id": "ByPidqkyu",
+          "position": {
+            "x": 42,
+            "y": 7,
             "units": "slots"
           },
           "size": {
@@ -115,6 +151,32 @@
             "units": "slots"
           },
           "type": "xod/core/clock"
+        },
+        "r1jEB5yJO": {
+          "boundLiterals": {
+            "B143qAq1Q": "D13"
+          },
+          "id": "r1jEB5yJO",
+          "position": {
+            "x": 36,
+            "y": 5,
+            "units": "slots"
+          },
+          "type": "xod/gpio/digital-read"
+        },
+        "rJhVwc11u": {
+          "boundLiterals": {
+            "BJ3DAE1QS": "\"Hello\"",
+            "rJgnw0417B": "\"WORLD\"",
+            "rkedCVkXS": "38h"
+          },
+          "id": "rJhVwc11u",
+          "position": {
+            "x": 35,
+            "y": 7,
+            "units": "slots"
+          },
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         }
       },
       "path": "@/main"
