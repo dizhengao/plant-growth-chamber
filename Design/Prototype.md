@@ -39,7 +39,7 @@ Large polystyrene box +
 
 
 
-##Sensors [Ongoing]
+## Sensors [Ongoing]
 
 ### Temperature Sensor
 
@@ -63,6 +63,9 @@ I will try and see if I can find a nod representing the sensor on the XOD custom
 ### Humidity Sensor
 Needs to buy one. Will check tomorrow.
 
+### Data collection
+
+Check out ThingSpeak(https://thingspeak.com) and some examples (https://community.thingspeak.com/tag/raspberry-pi/)
 
 [20210109 CHE]
 Required equipment:
