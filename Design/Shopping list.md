@@ -1,20 +1,17 @@
 # Shopping list
 
-- [Bread board](https://uk.rs-online.com/web/p/breadboards/4538824/)
-- [3D printing PLA](https://uk.rs-online.com/web/p/3d-printing-materials/8320406/)
+## Ideas
+
 - [Jumper Wire](https://uk.rs-online.com/web/p/breadboard-jumper-wire/5053396/)
 - [Light](https://uk.rs-online.com/web/p/led-strip-lights/9125016/): Need 6000 lumens. Check out [LED Kits](https://uk.rs-online.com/web/c/displays-optoelectronics/led-lighting-system-components/led-kits/?sort-by=Application&sort-order=desc&pn=1) from RS
 - An all-in-one sensor [Enviro](https://shop.pimoroni.com/products/enviro?variant=31155658489939)
-
+- Lamp: [Ali](https://www.aliexpress.com/item/4001095381063.html), [Rpi](https://tutorials-raspberrypi.com/connect-control-raspberry-pi-ws2812-rgb-led-strips/), [PPF and Lumen](https://www.waveformlighting.com/horticulture/convert-ppf-to-lumens-online-calculator)
+- [Fan](https://thepihut.com/products/miniature-5v-cooling-fan-for-raspberry-pi-and-other-computers?_pos=2&_sid=7ba767831&_ss=r)
+- [Water Pump](https://thepihut.com/products/peristaltic-liquid-pump-with-silicone-tubing-5v-to-6v-dc-power?_pos=5&_sid=7ba767831&_ss=r), https://uk.rs-online.com/web/p/water-pumps/9146944/
 
 This webpage contains useful information about integrated sensors for RaspberryPi: [RaspberryPi sensor list and tutorial](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
 
-Lamp: [Ali](https://www.aliexpress.com/item/4001095381063.html), [Rpi](https://tutorials-raspberrypi.com/connect-control-raspberry-pi-ws2812-rgb-led-strips/), [PPF and Lumen](https://www.waveformlighting.com/horticulture/convert-ppf-to-lumens-online-calculator)
-[Fan](https://thepihut.com/products/miniature-5v-cooling-fan-for-raspberry-pi-and-other-computers?_pos=2&_sid=7ba767831&_ss=r)
-[Camera](https://thepihut.com/products/raspberry-pi-camera-module?_pos=3&_sid=7ba767831&_ss=r)
-[Water Pump](https://thepihut.com/products/peristaltic-liquid-pump-with-silicone-tubing-5v-to-6v-dc-power?_pos=5&_sid=7ba767831&_ss=r), https://uk.rs-online.com/web/p/water-pumps/9146944/
-
-RS:
+## 已购
 
 1. **Two** Raspberry Pi 4 B 4GB, RS Stock No. 182-2096, https://uk.rs-online.com/web/p/raspberry-pi/1822096/
 2. LCD Touch Screen with 7in Capacitive Touch Screen, RS Stock No. 899-7466, https://uk.rs-online.com/web/p/products/8997466/
@@ -26,6 +23,7 @@ RS:
 8.  Raspberry Pi, Camera, RS Stock No. 913-2664, https://uk.rs-online.com/web/p/raspberry-pi-cameras/9132664/
 
 ## To Buy
+
 - [ ] Cutting pad (绿色)
 - [ ] 3 [heating element](https://uk.rs-online.com/web/p/heating-elements/2995950/)
 - [ ] [Fan for air circulation](https://uk.rs-online.com/web/p/axial-fans/6688827/)
@@ -38,6 +36,9 @@ RS:
 - [ ] Thermometer
 - [ ] silicone sealant
 - [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168), [Adafruit NeoPixel Digital RGB LED Strip - White 30 LED - 1m](https://www.amazon.com/Adafruit-NeoPixel-Digital-RGB-Strip/dp/B00R5CDGWA)? 
+- [ ] Humidity sensor
+- [ ] 湿度计
+- [ ] HDMI cable
 - [ ] 亚克力板
 - [ ] 电钻？
 - [ ] 胶水

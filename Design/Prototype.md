@@ -5,9 +5,9 @@
 This is to clarify priority of doing things:
 
 1. [1st month] Sensors assembly on Arduino: thermosensor, light sensor, humidity sensor (if we have that in kit). Basic circuit installed on a cardboard box or polystyrene box.
-2. 3D-print plates (ZD).
-3. Temperature and light control. 
-4. Arduino-Pi communication and data logging.
+2. Arduino-Pi communication and data logging.
+3. 3D-print plates (ZD).
+4. Temperature and light control.
 5. Camera.
 6. Data visualization on the 2nd Pi: real-time images, sensor data, remote control.
 7. Chamber assembly, circuit position into the chamber, light and camera ready.
@@ -21,6 +21,12 @@ This is to clarify priority of doing things:
 | Plant growing board    | Arduino board        | Raspberry Pi          | 4D touch screen | Raspberry Pi Screen |
 | ---------------------- | -------------------- | --------------------- | --------------- | ------------------- |
 | $12\times7.3\times1.8$ | $16\times7.5\times3$ | $8.5\times5.5\times2$ | $9\times5$      |                     |
+
+### Basic parameters
+
+Temperature: 20-22oC  
+Humidity: 60%  
+Light intensity: 6000 Lum or 150-200 PPFD (Photosynthetic Photon Flux Density).  
 
 ### Sensor placement
 
@@ -53,6 +59,7 @@ Large polystyrene box +
 The two sensors agree with each other
 
 ### Light Sensor
+
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
 | ---------- | --------- | -------- | -------- | ----------- |
 |GL5528 photoresistor| NO      |  TBD  | Analog | TBD|
@@ -60,6 +67,7 @@ The two sensors agree with each other
 Analog sensor of low quality. Only roughly tells if the lights are bright enough. Can not be used for precise measurement.
 
 ### Humidity Sensor
+
 Needs to buy one. Will check tomorrow.
 
 ### Data collection
@@ -68,6 +76,7 @@ Check out ThingSpeak(https://thingspeak.com) and some examples (https://communit
 Not accurate and can not tell humidity. 
 
 ### LCD display
+
 Address should be 20h (or 0x20), the document provided by the biomarker website is wrong.
 
 
