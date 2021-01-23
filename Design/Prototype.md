@@ -38,7 +38,6 @@ Large polystyrene box +
 [Heating elements](https://uk.rs-online.com/web/p/heating-elements/2995950/), [air circulation Fan](https://uk.rs-online.com/web/p/axial-fans/6688827/), [cooling fan](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN), insulation panel
 
 
-
 ## Sensors [Ongoing]
 
 ### Temperature Sensor
@@ -49,16 +48,16 @@ Large polystyrene box +
 
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
 | ---------- | --------- | -------- | -------- | ----------- |
-| LM75   | NO       |   Read directly through I2C bus | Digital | TBD|
+| LM75   | Yes (download library from bio-maker tutorial)       |   Read directly through I2C bus | Digital | TBD|
 
-Are the two sensors agree?
+The two sensors agree with each other
 
 ### Light Sensor
 | Sensor Type| In XOD Library? | Physics(reading to Temp value)| Data Type |   Data Logging Method|
 | ---------- | --------- | -------- | -------- | ----------- |
 |GL5528 photoresistor| NO      |  TBD  | Analog | TBD|
 
-I will try and see if I can find a nod representing the sensor on the XOD custom library web.
+Analog sensor of low quality. Only roughly tells if the lights are bright enough. Can not be used for precise measurement.
 
 ### Humidity Sensor
 Needs to buy one. Will check tomorrow.
@@ -66,6 +65,11 @@ Needs to buy one. Will check tomorrow.
 ### Data collection
 
 Check out ThingSpeak(https://thingspeak.com) and some examples (https://community.thingspeak.com/tag/raspberry-pi/)
+Not accurate and can not tell humidity. 
+
+### LCD display
+Address should be 20h (or 0x20), the document provided by the biomarker website is wrong.
+
 
 [20210109 CHE]
 Required equipment:

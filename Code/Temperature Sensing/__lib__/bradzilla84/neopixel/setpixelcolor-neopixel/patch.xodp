@@ -1,0 +1,99 @@
+{
+  "description": "Set a Pixel to Col",
+  "nodes": [
+    {
+      "description": "Blue Color 0-255",
+      "id": "ByEApxwaQ",
+      "label": "BLUE",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "H1FSRxvaX",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pixel Number to Set. (Starting at 0)",
+      "id": "H1KaaePam",
+      "label": "PixelNumber",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Green Color 0-255",
+      "id": "HyG06xD6Q",
+      "label": "GREEN",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Pulse to Set",
+      "id": "SJgtrAgDa7",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Syv36gPaX",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "@/input-neopixel-device"
+    },
+    {
+      "description": "Red Color 0-255",
+      "id": "rJg0agw6m",
+      "label": "RED",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ry4IRxPaQ",
+      "label": "OUT",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "@/output-neopixel-device"
+    },
+    {
+      "id": "ryzapxP6X",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

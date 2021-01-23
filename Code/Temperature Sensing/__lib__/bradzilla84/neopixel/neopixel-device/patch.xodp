@@ -1,0 +1,66 @@
+{
+  "description": "Main setup for NeoPixel",
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "D6"
+      },
+      "description": "Data Pin for Strip",
+      "id": "SJRtNlPTX",
+      "label": "DataPin",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "8"
+      },
+      "description": "Number of LED's",
+      "id": "SJynGgvT7",
+      "label": "NUM_LEDS",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "50"
+      },
+      "description": "Brightness 0-100",
+      "id": "rJ-hGlv6Q",
+      "label": "BRIGHTNESS",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "rJbz51vpm",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "rkEf9yw6m",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}
