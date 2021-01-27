@@ -34,7 +34,7 @@ Che wrote:
 
 Che wrote:
 
-- How do we achieve remote control and communication through WiFi? ->[ZD] For Raspberry Pi it is very straightforward as it has built-in WiFi module, for Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!) or SparkFun ESP8266 Thing Dev Board.
+- How do we achieve remote control and communication through WiFi? ->[ZD] For Raspberry Pi it is very straightforward as it has built-in WiFi module, for Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or SparkFun ESP8266 Thing Dev Board.
 
 ### Programming on Hardware
 

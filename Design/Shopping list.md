@@ -8,6 +8,7 @@
 - Lamp: [Ali](https://www.aliexpress.com/item/4001095381063.html), [Rpi](https://tutorials-raspberrypi.com/connect-control-raspberry-pi-ws2812-rgb-led-strips/), [PPF and Lumen](https://www.waveformlighting.com/horticulture/convert-ppf-to-lumens-online-calculator)
 - [Fan](https://thepihut.com/products/miniature-5v-cooling-fan-for-raspberry-pi-and-other-computers?_pos=2&_sid=7ba767831&_ss=r)
 - [Water Pump](https://thepihut.com/products/peristaltic-liquid-pump-with-silicone-tubing-5v-to-6v-dc-power?_pos=5&_sid=7ba767831&_ss=r), https://uk.rs-online.com/web/p/water-pumps/9146944/
+- IoT kit https://www.sparkfun.com/products/14682
 
 This webpage contains useful information about integrated sensors for RaspberryPi: [RaspberryPi sensor list and tutorial](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
 
@@ -25,20 +26,21 @@ This webpage contains useful information about integrated sensors for RaspberryP
 ## To Buy
 
 - [ ] Cutting pad (绿色)
-- [ ] 3 [heating element](https://uk.rs-online.com/web/p/heating-elements/2995950/)
+- [ ] 3 [heating element, RS Stock No. 299-5950](https://uk.rs-online.com/web/p/heating-elements/2995950/)
 - [ ] [Fan for air circulation](https://uk.rs-online.com/web/p/axial-fans/6688827/)
+- [ ] [SparkFun ESP8266 Thing - Dev Board (with Headers)](https://www.sparkfun.com/products/13804)
+- [ ] [Brannan Wall Mount Glass Thermometer](https://uk.rs-online.com/web/p/glass-thermometers/3047175/)
+- [ ] silicone sealant
+- [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168), [Adafruit NeoPixel Digital RGB LED Strip - White 30 LED - 1m](https://www.amazon.com/Adafruit-NeoPixel-Digital-RGB-Strip/dp/B00R5CDGWA)? 
+- [ ] Humidity sensor
+- [ ] 湿度计
+- [ ] HDMI cable
 - [ ] For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very  very expensive (>£200)
 - [ ] Insulation panels (if using polystyrene box then may skip that)
 - [ ] AC/DC 12 V adaptor
 - [ ] 1k, 10k and 20k resistors
 - [ ] 3 x 2N3904 transistors
 - [ ] electromechanical relay
-- [ ] Thermometer
-- [ ] silicone sealant
-- [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168), [Adafruit NeoPixel Digital RGB LED Strip - White 30 LED - 1m](https://www.amazon.com/Adafruit-NeoPixel-Digital-RGB-Strip/dp/B00R5CDGWA)? 
-- [ ] Humidity sensor
-- [ ] 湿度计
-- [ ] HDMI cable
 - [ ] 亚克力板
 - [ ] 电钻？
 - [ ] 胶水
