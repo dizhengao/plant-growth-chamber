@@ -26,21 +26,19 @@ This webpage contains useful information about integrated sensors for RaspberryP
 ## To Buy
 
 - [ ] Cutting pad (绿色)
-- [ ] 3 [heating element, RS Stock No. 299-5950](https://uk.rs-online.com/web/p/heating-elements/2995950/)
-- [ ] [Fan for air circulation](https://uk.rs-online.com/web/p/axial-fans/6688827/)
-- [ ] [SparkFun ESP8266 Thing - Dev Board (with Headers)](https://www.sparkfun.com/products/13804)
-- [ ] [Brannan Wall Mount Glass Thermometer](https://uk.rs-online.com/web/p/glass-thermometers/3047175/)
-- [ ] silicone sealant
-- [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168), [Adafruit NeoPixel Digital RGB LED Strip - White 30 LED - 1m](https://www.amazon.com/Adafruit-NeoPixel-Digital-RGB-Strip/dp/B00R5CDGWA)? 
-- [ ] Humidity sensor
-- [ ] 湿度计
-- [ ] HDMI cable
-- [ ] For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very  very expensive (>£200)
-- [ ] Insulation panels (if using polystyrene box then may skip that)
+- [ ] 3* [heating element, RS Stock No. 299-5950](https://uk.rs-online.com/web/p/heating-elements/2995950/)
+- [ ] [Bostik Bond-Flex 100HMA Black Sealant Non-Slump Paste 300 ml Cartridge. RS Stock No. 341-0955](https://uk.rs-online.com/web/p/sealants/3410955/)
+- [ ] 3* [Seeed Studio 101020011, Temperature and Humidity Sensor for DHT11 for Grove System, RS Stock No. 174-3237](https://uk.rs-online.com/web/p/sensor-development-tools/1743237/)
+- [ ] 2* [RS PRO 4K - Micro HDMI to HDMI Cable, Male to Male- 1m. RS Stock No.: 186-3031](https://uk.rs-online.com/web/p/hdmi-cables/1863031/)
+- [ ] [Laserliner 082.034A Digital Hygrometer, RS Stock No. 191-9564](https://uk.rs-online.com/web/p/hygrometers/1919564/)
+- [ ] [Okdo ABS Case for use with Raspberry Pi 4 in Black, RS Stock No.193-5381](https://uk.rs-online.com/web/p/raspberry-pi-cases/1935381/)
+- [ ] [SparkFun ESP8266 Thing - Dev Board (with Headers)](https://www.sparkfun.com/products/13804), this is available from Sparkfun Electronics.-
+- [ ] 1k, 10k and 20k resistors(需要买一些么？)
+- [ ] ? [NEOPIXELS light?](https://www.adafruit.com/category/168)
+- [ ] ?[12 V dc, DC Axial Fan, 60 x 60 x 25mm, 39.1m³/h, 2.8W. RS Stock No. 668-8827](https://uk.rs-online.com/web/p/axial-fans/6688827/) **How to connect this to arduino???**
 - [ ] AC/DC 12 V adaptor
-- [ ] 1k, 10k and 20k resistors
-- [ ] 3 x 2N3904 transistors
+- [ ] For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very very expensive (>£200)
+- [ ] Insulation panels (if using polystyrene box then may skip that)
 - [ ] electromechanical relay
 - [ ] 亚克力板
-- [ ] 电钻？
-- [ ] 胶水
+- [ ] 电钻
