@@ -32,7 +32,7 @@ quick thoughts can be added here
 
 ## Reference
 
-Suppliers:
+### Suppliers
 
 - [RS](https://uk.rs-online.com/web/)
 - https://thepihut.com/
@@ -42,14 +42,25 @@ Suppliers:
 - https://uk.farnell.com/?pf_custSiteRedirect=true
 - https://www.thorlabs.com/
 
-Some Hackster projects:
+### Some Hackster projects
 
 - [Biomaker Tutorial](https://www.hackster.io/159756/biomaker-tutorial-1-getting-started-4fc966)
 - https://www.hackster.io/lunaflow/lunaflow-bioluminescent-plankton-for-3d-flow-visualisation-d60cbe -> incubator design, **temperature control**, real-time monitor camera, codes.
 
 Refer to some plant growth products and facility that have been using in real plant research (e.g. in PGF) and [gardin](https://gard.in/) (This is very expensive so probably we won't use them in our project.)
 
-Other references:
+### Device
+
+#### Relay
+
+- [Connecting a 12v 8 Channel Relay to an External Power Supply and RaspberryPi](https://medium.com/@jinky32/connecting-a-12v-8-channel-relay-to-an-external-power-supply-and-raspberrypi-6fec119c112c)  
+- [Control High Voltage Devices with Arduino](https://howtomechatronics.com/tutorials/arduino/control-high-voltage-devices-arduino-relay-tutorial/)
+
+#### WiFi
+
+Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or [SparkFun ESP8266 Thing Dev Board](learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide).
+
+### Other references
 
 - [Robotic arm](https://shop.pimoroni.com/products/mearm-robot-raspberry-pi-kit?variant=21775370223699&currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=google+shopping?utm_source=google&utm_medium=surfaces&utm_campaign=shopping&gclid=Cj0KCQiA48j9BRC-ARIsAMQu3WTvhcmb-bZv5fxLHJMAYPL-1Bl-ShvdAIO8ML_nc9I4GpWhqUfcmDkaAn6uEALw_wcB), [Makeblock robot](https://www.makeblock.com/cn/mbot/)
 - https://www.nature.com/articles/d41586-019-01590-z
