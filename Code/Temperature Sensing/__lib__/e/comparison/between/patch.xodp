@@ -21,16 +21,6 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "id": "HJx50mkvz",
-      "label": "X",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-number"
-    },
-    {
       "id": "S1gs26myDM",
       "position": {
         "units": "slots",
@@ -45,6 +35,16 @@
       "position": {
         "units": "slots",
         "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "HJx50mkvz",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 0,
         "y": 0
       },
       "type": "xod/patch-nodes/input-number"

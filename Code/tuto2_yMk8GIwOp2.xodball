@@ -33,14 +33,18 @@
         }
       },
       "nodes": {
-        "Sy67EHqAN": {
-          "id": "Sy67EHqAN",
+        "Hyjl19deu": {
+          "boundLiterals": {
+            "BJ3DAE1QS": "\"Hello\"",
+            "rkedCVkXS": "20h"
+          },
+          "id": "Hyjl19deu",
           "position": {
             "x": 1,
             "y": 0,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         }
       },
       "path": "@/tuto201"

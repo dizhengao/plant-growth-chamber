@@ -1,14 +1,25 @@
 {
   "links": [
     {
-      "id": "H1ZLPosYS",
+      "id": "SyBnHosYr",
       "input": {
-        "nodeId": "HJhoHsiKH",
-        "pinKey": "ryTIROHwkW"
+        "nodeId": "HJCjSooKr",
+        "pinKey": "HkXK-dGob"
       },
       "output": {
+        "nodeId": "HJhoHsiKH",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "rk9rviiYr",
+      "input": {
         "nodeId": "HyrrwosFS",
-        "pinKey": "BkMRNooFr"
+        "pinKey": "Hk9jNsjtr-$1"
+      },
+      "output": {
+        "nodeId": "B1Y9HioFr",
+        "pinKey": "Bkf4BDsmV"
       }
     },
     {
@@ -23,17 +34,6 @@
       }
     },
     {
-      "id": "H1yLwsitH",
-      "input": {
-        "nodeId": "Sy-irsoFS",
-        "pinKey": "BJI7P8t9Z"
-      },
-      "output": {
-        "nodeId": "HyrrwosFS",
-        "pinKey": "BkMRNooFr"
-      }
-    },
-    {
       "id": "HJarPjoFH",
       "input": {
         "nodeId": "HyrrwosFS",
@@ -45,14 +45,14 @@
       }
     },
     {
-      "id": "SyBnHosYr",
+      "id": "H1yLwsitH",
       "input": {
-        "nodeId": "HJCjSooKr",
-        "pinKey": "HkXK-dGob"
+        "nodeId": "Sy-irsoFS",
+        "pinKey": "BJI7P8t9Z"
       },
       "output": {
-        "nodeId": "HJhoHsiKH",
-        "pinKey": "HkyxURuSPyW"
+        "nodeId": "HyrrwosFS",
+        "pinKey": "BkMRNooFr"
       }
     },
     {
@@ -67,14 +67,14 @@
       }
     },
     {
-      "id": "rk9rviiYr",
+      "id": "H1ZLPosYS",
       "input": {
-        "nodeId": "HyrrwosFS",
-        "pinKey": "Hk9jNsjtr-$1"
+        "nodeId": "HJhoHsiKH",
+        "pinKey": "ryTIROHwkW"
       },
       "output": {
-        "nodeId": "B1Y9HioFr",
-        "pinKey": "Bkf4BDsmV"
+        "nodeId": "HyrrwosFS",
+        "pinKey": "BkMRNooFr"
       }
     }
   ],
@@ -116,16 +116,6 @@
       "type": "xod/core/flip-flop"
     },
     {
-      "arityLevel": 2,
-      "id": "HyrrwosFS",
-      "position": {
-        "units": "slots",
-        "x": 2,
-        "y": 1
-      },
-      "type": "@/all"
-    },
-    {
       "id": "Sy-irsoFS",
       "position": {
         "units": "slots",
@@ -142,6 +132,16 @@
         "y": 0
       },
       "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "arityLevel": 2,
+      "id": "HyrrwosFS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/all"
     }
   ]
 }

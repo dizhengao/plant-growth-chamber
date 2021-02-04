@@ -17,17 +17,6 @@
   ],
   "links": [
     {
-      "id": "Bk3XEzmrv",
-      "input": {
-        "nodeId": "rkNwWX-dU",
-        "pinKey": "B1XVE25CWU"
-      },
-      "output": {
-        "nodeId": "H1EX4G7Sw",
-        "pinKey": "SJfYoapVaU"
-      }
-    },
-    {
       "id": "BkieK4WXW_L",
       "input": {
         "nodeId": "ryllY4W7-u8",
@@ -127,17 +116,6 @@
       }
     },
     {
-      "id": "SkWE4zXBv",
-      "input": {
-        "nodeId": "HJQ8_zXbu8",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "H1EX4G7Sw",
-        "pinKey": "Hk7Fo6aNp8"
-      }
-    },
-    {
       "id": "SysvZQZdL",
       "input": {
         "nodeId": "r1lY4WX-_L",
@@ -146,17 +124,6 @@
       "output": {
         "nodeId": "rkNwWX-dU",
         "pinKey": "BJxNEncCWU"
-      }
-    },
-    {
-      "id": "r1vXVM7rw",
-      "input": {
-        "nodeId": "SJhixt8KU",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "H1EX4G7Sw",
-        "pinKey": "SJfYoapVaU"
       }
     },
     {
@@ -171,6 +138,17 @@
       }
     },
     {
+      "id": "r1vXVM7rw",
+      "input": {
+        "nodeId": "SJhixt8KU",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "H1EX4G7Sw",
+        "pinKey": "SJfYoapVaU"
+      }
+    },
+    {
       "id": "ryqmNGXSv",
       "input": {
         "nodeId": "r1IdM7bO8",
@@ -180,18 +158,31 @@
         "nodeId": "H1EX4G7Sw",
         "pinKey": "SJfYoapVaU"
       }
+    },
+    {
+      "id": "Bk3XEzmrv",
+      "input": {
+        "nodeId": "rkNwWX-dU",
+        "pinKey": "B1XVE25CWU"
+      },
+      "output": {
+        "nodeId": "H1EX4G7Sw",
+        "pinKey": "SJfYoapVaU"
+      }
+    },
+    {
+      "id": "SkWE4zXBv",
+      "input": {
+        "nodeId": "HJQ8_zXbu8",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H1EX4G7Sw",
+        "pinKey": "Hk7Fo6aNp8"
+      }
     }
   ],
   "nodes": [
-    {
-      "id": "H1EX4G7Sw",
-      "position": {
-        "units": "slots",
-        "x": 11,
-        "y": 1
-      },
-      "type": "xod/waves/square-wave"
-    },
     {
       "id": "H1fFu7buL",
       "position": {
@@ -352,6 +343,15 @@
         "y": 4
       },
       "type": "@/tm1637-decex"
+    },
+    {
+      "id": "H1EX4G7Sw",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/waves/square-wave"
     }
   ]
 }
