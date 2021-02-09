@@ -17,17 +17,6 @@
   ],
   "links": [
     {
-      "id": "Bk5_yrb-E",
-      "input": {
-        "nodeId": "BkvuBzlb4",
-        "pinKey": "B13SCNhl-"
-      },
-      "output": {
-        "nodeId": "r1d_kH-WN",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "By4-MzIbN",
       "input": {
         "nodeId": "SkQJGf8bE",
@@ -47,17 +36,6 @@
       "output": {
         "nodeId": "rytMi4-b4",
         "pinKey": "rJ2LddxlG"
-      }
-    },
-    {
-      "id": "HkQKrGxbN",
-      "input": {
-        "nodeId": "SyUmhbx-E",
-        "pinKey": "SJjmdOVOW"
-      },
-      "output": {
-        "nodeId": "BkvuBzlb4",
-        "pinKey": "HJU8CE2lW"
       }
     },
     {
@@ -136,6 +114,17 @@
         "nodeId": "Hk7KPEWb4",
         "pinKey": "BkQzLCurwJZ"
       }
+    },
+    {
+      "id": "SyRKiculO",
+      "input": {
+        "nodeId": "SyUmhbx-E",
+        "pinKey": "SJjmdOVOW"
+      },
+      "output": {
+        "nodeId": "rk2Ki5dgd",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -148,15 +137,6 @@
         "y": 7
       },
       "type": "xod/patch-nodes/output-number"
-    },
-    {
-      "id": "BkvuBzlb4",
-      "position": {
-        "units": "slots",
-        "x": 7,
-        "y": 0
-      },
-      "type": "xod/core/clock"
     },
     {
       "boundLiterals": {
@@ -174,7 +154,7 @@
       "id": "S1igU4ZW4",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 3
       },
       "type": "xod/i2c/read-byte"
@@ -222,16 +202,6 @@
       "type": "xod/i2c/request"
     },
     {
-      "id": "r1d_kH-WN",
-      "label": "IVAL",
-      "position": {
-        "units": "slots",
-        "x": 12,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-number"
-    },
-    {
       "id": "rktaR-gZE",
       "position": {
         "units": "slots",
@@ -251,6 +221,16 @@
         "y": 5
       },
       "type": "xod/bits/shift-right"
+    },
+    {
+      "id": "rk2Ki5dgd",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
     }
   ]
 }
