@@ -32,9 +32,12 @@ This webpage contains useful information about integrated sensors for RaspberryP
 16. [RS PRO 1kΩ Carbon Film Resistor 2W ±5%. RS Stock No. 707-8861](https://uk.rs-online.com/web/p/through-hole-fixed-resistors/7078861/)
 17. [RS PRO 10kΩ Carbon Film Resistor 2W ±5%, RS Stock No. 707-8906](https://uk.rs-online.com/web/p/products/7078906/)
 18. [12 V dc, DC Axial Fan, 60 x 60 x 25mm, 39.1m³/h, 2.8W. RS Stock No. 668-8827](https://uk.rs-online.com/web/p/axial-fans/6688827/)
+19. 2* [Sandisk Storage Card for Raspberry Pi, 16GB NOOBs RS Stock No.:121-3897](https://uk.rs-online.com/web/p/raspberry-pi-os/1213897/) 
+20. [Samsung 32 GB MicroSDHC Card Class 10 RS Stock No. 144-9017](https://uk.rs-online.com/web/p/micro-sd-cards/1449017/)
 
 ## To Buy
 
+- [ ] [JKL Components White LED Strip 5m 12V dc, ZFS-155000-CW RS Stock No. 123-1037](https://uk.rs-online.com/web/p/led-strip-lights/1231037/) £132.24, 6500ºK, 6925 lum, 159.28 umol/s PPFD
 - [ ] Cutting pad (绿色)
 - [ ] ? [NEOPIXELS light?](https://www.adafruit.com/category/168)
 - [ ] ? AC/DC 12 V adaptor
