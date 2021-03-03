@@ -6,7 +6,9 @@
 4. WiFi module
 5.  Cloud (website (heroku or github page or something)) and visulasition  
 6.  Robotic arm
-   
+7.  [Thermal cameras](http://plantphenotyping.com/products/plantscreen-imaging-sensors/#fluorcam)
+8.  [Fluorescence cameras](http://plantphenotyping.com/products/plantscreen-imaging-sensors/#fluorcam) for in-box CF imaging.
+
 ## Workflow
 
 This is to clarify priority of doing things:
@@ -50,6 +52,18 @@ Water pump: where to put it???
 Large polystyrene box +
 [Heating elements](https://uk.rs-online.com/web/p/heating-elements/2995950/), [air circulation Fan](https://uk.rs-online.com/web/p/axial-fans/6688827/), [cooling fan](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN), insulation panel
 
+### Light
+
+LED panels from Photon (Czech):
+- [LED Fyto-Panels from Photon](http://led-growing-lights.com/products/led-fyto-panels/#downloads) - Very expensive
+- [Compact LED Bars](http://led-growing-lights.com/products/led-bars/compact-led-bars/#details)- Very expensive. 
+  - PPFD: max. 920 µmol.m-2.s-1 (at the distance of 50 cm)
+  - Light source: 12 x 126 pcs. LED 5,700 K cool white
+  - Compact LED Bars ( stand-alone system with standard powering option) 2,690 €
+- [LED Lights SL 3500](http://led-growing-lights.com/products/led-lights-sl-3500/): The one used in Wanne's lab.
+  - 20x20 cm RGB. Light emitting diodes (LEDs): 455 nm, 530 nm, 617 nm, cool white (4,500 - 10,000 K) and others
+  -  High light output - up to 3,000 µmol.m-2.s-1 at the distance of 20 cm
+  - £4,500 with a controller
 
 ## Sensors [Ongoing]
 
@@ -92,5 +106,3 @@ Required equipment:
 1. 多用电表
 2.  temperature gauge for calibration
 3.  lux meter???
-
-
