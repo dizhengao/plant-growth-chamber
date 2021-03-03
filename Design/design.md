@@ -6,6 +6,8 @@ This file is for general design ideas and resources to build the project.
 
 quick thoughts can be added here
 
+[20200303-ZD] Thermo cameras and fluorescence cameras. Also check out devices on [Photon](https://handheld.psi.cz/).
+
 [20201203-ZD] To have another raspberry Pi with screen showing real time images and data logs, which can be put in home/lab bench so that you won't even have to have a computer to do the monitoring. It would be great if we have this along side with our prototype at the showcase event.
 
 [20201125-Che] Lamp: Control RGB light separately; create different light intensity and RGB components for different experimental purposes.
@@ -48,8 +50,9 @@ quick thoughts can be added here
 
 ### Some Hackster projects
 
+- :star:[FytoScope Chamber FS 130](http://growth-chambers.com/products/small-fytoscopes/fytoscope-chamber-130/#details) from Photon
 - [Biomaker Tutorial](https://www.hackster.io/159756/biomaker-tutorial-1-getting-started-4fc966)
-- [Lunaflow](https://www.hackster.io/lunaflow/lunaflow-bioluminescent-plankton-for-3d-flow-visualisation-d60cbe): incubator design, **temperature control**, real-time monitor camera, codes.
+- :star:[Lunaflow](https://www.hackster.io/lunaflow/lunaflow-bioluminescent-plankton-for-3d-flow-visualisation-d60cbe): incubator design, **temperature control**, real-time monitor camera, codes.
 - [eCO-SENSE](https://www.hackster.io/glen-chua/eco-sense-soil-sensors-powered-by-plant-photosynthesis-be80a2) A sensor to monitor soil conditions powered by plant growth. This project uses a temperature sensor, moisture sensor and gas sensor to take measurements of soil 68 conditions and adds a bluetooth module to send the data wirelessly to a phone or computer. 
 - [Variable-Time Camera for Monitoring Plant Pollination Events](https://www.hackster.io/team-ppi/variable-time-camera-for-monitoring-plant-pollination-events-ad21e7) A **video and time-lapse monitor** to record pollinators interacting with plants. This project included an environmental sensor to measure temperature, humidity and barometric pressure and wrote this data into the image file names for later analysis. 
 - [Low Cost Oxygen Sensor for Bioreactors](https://www.hackster.io/biomaker/low-cost-oxygen-sensor-for-bioreactors-c7e066) This project developed a custom low-cost oxygen sensor to measure oxygen levels in cultures of E. coli, and logged the data via an Arduino microcontroller. 
@@ -71,7 +74,7 @@ Arduino there are some modules based on the [ESP8266 microchip](https://en.wikip
 
 ### XOD libraries
 
-#### Hardware 
+#### Hardware
 
 *specific to Open-Smart Rich UNO R3 board:*
 
@@ -97,6 +100,7 @@ Arduino there are some modules based on the [ESP8266 microchip](https://en.wikip
 - https://www.nature.com/articles/d41586-019-01590-z
 - [Open-source lab](https://www.appropedia.org/Open-source_Lab)
 - [BENEFICIAL BIO](https://beneficial.bio/)
+- [Photon-plant phenotyping systems](http://plantphenotyping.com/)
 
 ### Questions:
 
