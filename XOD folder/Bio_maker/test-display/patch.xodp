@@ -1,0 +1,101 @@
+{
+  "links": [
+    {
+      "id": "Sk46lN2_eO",
+      "input": {
+        "nodeId": "HkGpxE3_eO",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "SJ6lVndl_",
+        "pinKey": "H1ozdsuld"
+      }
+    },
+    {
+      "id": "BySplN2Oxd",
+      "input": {
+        "nodeId": "Bke6eNhOgO",
+        "pinKey": "ByTiUjux_"
+      },
+      "output": {
+        "nodeId": "BkWagVhdxd",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1I6l4n_xd",
+      "input": {
+        "nodeId": "Symax43_gO",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "Bke6eNhOgO",
+        "pinKey": "BJN08sOeO"
+      }
+    },
+    {
+      "id": "HywalNhuxd",
+      "input": {
+        "nodeId": "SJ6lVndl_",
+        "pinKey": "HJiBDo_e_"
+      },
+      "output": {
+        "nodeId": "Symax43_gO",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "SJ6lVndl_",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2.75
+      },
+      "type": "@/display-temperature"
+    },
+    {
+      "id": "Bke6eNhOgO",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0.75
+      },
+      "type": "@/display-time"
+    },
+    {
+      "id": "BkWagVhdxd",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -0.25
+      },
+      "type": "xod/core/pulse-on-true"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "5"
+      },
+      "id": "HkGpxE3_eO",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3.75
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "1"
+      },
+      "id": "Symax43_gO",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1.75
+      },
+      "type": "xod/core/delay"
+    }
+  ]
+}
