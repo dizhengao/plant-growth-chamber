@@ -1,4 +1,6 @@
-# Todo list 
+# Todo list
+
+Check out [prototype-workflow](./Design/Prototype.md)
 
 ## Application
 
