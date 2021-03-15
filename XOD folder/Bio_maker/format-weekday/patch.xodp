@@ -1,0 +1,67 @@
+{
+  "links": [
+    {
+      "id": "HyME1iue_",
+      "input": {
+        "nodeId": "BJhX1j_g_",
+        "pinKey": "S1eoINXxuL"
+      },
+      "output": {
+        "nodeId": "HkfXJjulO",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rk0Zgiued",
+      "input": {
+        "nodeId": "S1wWgiOlu",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BJhX1j_g_",
+        "pinKey": "BkVsLE7gdL"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "HkfXJjulO",
+      "label": "NUM",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -0.25
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "arityLevel": 7,
+      "boundLiterals": {
+        "ByGjLNmgO8": "\"Mon\"",
+        "ByGjLNmgO8-$1": "\"Tue\"",
+        "ByGjLNmgO8-$2": "\"Wed\"",
+        "ByGjLNmgO8-$3": "\"Thu\"",
+        "ByGjLNmgO8-$4": "\"Fri\"",
+        "ByGjLNmgO8-$5": "\"Sat\"",
+        "ByGjLNmgO8-$6": "\"Sun\""
+      },
+      "id": "BJhX1j_g_",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "cesars/utils/nth-input"
+    },
+    {
+      "id": "S1wWgiOlu",
+      "label": "DAY",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-string"
+    }
+  ]
+}
