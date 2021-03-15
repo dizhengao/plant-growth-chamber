@@ -13,10 +13,10 @@
 
 This is to clarify priority of doing things:
 
-1. [1st month] Sensors assembly on Arduino: thermosensor, light sensor, humidity sensor (if we have that in kit). Basic circuit installed on a cardboard box or polystyrene box.
-2. Arduino-Pi communication and data logging.
-3. 3D-print plates (ZD).
-4. Temperature and light control.
+1. [Che]Sensors assembly: Seeed thermo&humidity sensor, light sensor.
+2. [Che]Temperature and light control.
+3. [Debug]Data logging: to cloud and LCD screen.
+4. [Debug]3D-print plates.
 5. Camera.
 6. Data visualization on the 2nd Pi: real-time images, sensor data, remote control.
 7. Chamber assembly, circuit position into the chamber, light and camera ready.
