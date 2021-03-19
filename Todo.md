@@ -1,10 +1,38 @@
 # Todo list
 
-Check out [prototype-workflow](./Design/Prototype.md)
+## Workflow
 
-## Application
+This is to clarify priority.
 
-**Done**  
+Last update: 15.3.21
+
+0. [x] [Application](#application-done) and first-month 'report'
+1. [ ] [Che]Sensors assembly: Seeed thermo&humidity sensor, light sensor.
+2. [ ] [Che]Temperature and light control.
+3. [ ] [Debug]Data logging: to cloud and LCD screen.
+4. [ ] [Debug]3D-print plates.
+5. [ ] Camera.
+6. [ ] Data visualization on the 2nd Pi: real-time images, sensor data, remote control.
+7. [ ] Chamber assembly, circuit position into the chamber, light and camera ready.
+
+## Time table
+
+### Past
+
+| Task Level | 16-22 Nov        | 23-29 Nov                        | 30-06 Dec        |
+| ---------- | ---------------- | -------------------------------- | ---------------- |
+| Primary    | Github work flow | Look for people and setup design | Application ddl! |
+
+### On-going
+
+| Task Level | Primary                                         | Secondary | Minor |
+| ---------- | ----------------------------------------------- | --------- | ----- |
+| March      | Sensors                                         | Controls  | ??    |
+| Apr        | Growth condition control (Temp,Hum,Light,Water) | ??        | ??    |
+| May        | Remote monitor and control                      | ??        | ??    |
+
+## Application (Done)
+
 Things to prepare and decide:
 Che wrote:
 
@@ -16,52 +44,11 @@ Che wrote:
 - Actuators: Lights---what wavelenghth?; Water Pump; Robotic Arms---What function we want to achieve with them.
 - Flow Chart: Basic logic to link sensors and actuators. To illustrate how things work.
 
-> What do you think? Any comments?
+## To learn
 
-> All good!
-
-## Knowledge Requirements
-
-### Electrical Sensors
-
-Che wrote:
-
-- How do we communicate with sensors? clock
-- How we process the data reading from sensors?
-- Data log and plots.
-- Initializing and calibration. [ZD] Temp: using a thermometer; Light intensity: ZD can borrow a professional one from lab; humidity: buy a professional one from Amazon?
-- Camera-> [ZD] There are many camera modules for Raspberry Pi but not as many for Arduino (as far as I know...). So (1) use Raspberry Pi (2) search for more Arduino projects with camera; (3) search for adapters to connect Arduino and Raspberry Pi cameras.
-
-### WiFi modules
-
-Che wrote:
-
-- How do we achieve remote control and communication through WiFi? ->[ZD] For Raspberry Pi it is very straightforward as it has built-in WiFi module, for Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or [SparkFun ESP8266 Thing Dev Board](learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide).
-
-### Programming on Hardware
-
-Che wrote:
-
-- Syntax of the programming language;
-- Debug and tests scheme.
-- Development tools.
-
-### DIY
-
-ZD:
-
-- chamber (Should have enough insulation for heat)
-- plates for growing Arabidopsis
-- scaffolds to mount sensors
-
-Che wrote:
-
-- 3D printing and CAD models.
-- Robotic arms
-
-### To learn:
+Last update: 18.3.21
 
 - [ ] Arduino-Pi communication (UART)
-- [ ] XOD
+- [x] XOD
 - [ ] electromechanical relay
 - [ ] Voltage divider
