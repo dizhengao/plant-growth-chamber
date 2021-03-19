@@ -2,7 +2,25 @@
 
 This file is for general design ideas and resources to build the project.
 
-## Ideas
+- [Design](#design)
+  - [1. Ideas](#1-ideas)
+  - [2. Time table](#2-time-table)
+    - [2.1. Pre-start](#21-pre-start)
+    - [2.2. First month](#22-first-month)
+    - [2.3. Final](#23-final)
+  - [3. Reference](#3-reference)
+    - [3.1. Suppliers](#31-suppliers)
+    - [3.2. Some Hackster projects](#32-some-hackster-projects)
+    - [3.3. Device](#33-device)
+      - [3.3.1. Relay](#331-relay)
+      - [3.3.2. WiFi](#332-wifi)
+    - [3.4. XOD libraries](#34-xod-libraries)
+      - [3.4.1. Hardware](#341-hardware)
+      - [3.4.2. Basic XOD elements](#342-basic-xod-elements)
+    - [3.5. Other references](#35-other-references)
+    - [3.6. Questions:](#36-questions)
+
+## 1. Ideas
 
 quick thoughts can be added here
 
@@ -16,29 +34,29 @@ quick thoughts can be added here
 
 [20201115-ZD] Expand the prototype to larger scale: Use a robot with a camera to move around and take pictures of plants every xx minutes/hours; or install tracks for camera on the top of the chamber to take images every xx minute/hour.
 
-## Time table
+## 2. Time table
 
-### Pre-start
+### 2.1. Pre-start
 
 | Task Level | 16-22 Nov        | 23-29 Nov                        | 30-06 Dec        |
 | ---------- | ---------------- | -------------------------------- | ---------------- |
 | Primary    | Github work flow | Look for people and setup design | Application ddl! |
 
-### First month
+### 2.2. First month
 
 | Task Level | 07-20 Dec | 21-3 Jan | 4017 Jan | 18-31 Jan   |
 | ---------- | --------- | -------- | -------- | ----------- |
 | Primary    | xxx       | xxx      | xxx      | 29th report |
 
-### Final
+### 2.3. Final
 
 | Task Level | Feb | Mar | Apr          |
 | ---------- | --- | --- | ------------ |
 | Primary    | xxx | xxx | Final report |
 
-## Reference
+## 3. Reference
 
-### Suppliers
+### 3.1. Suppliers
 
 - [RS](https://uk.rs-online.com/web/)
 - https://thepihut.com/
@@ -48,7 +66,7 @@ quick thoughts can be added here
 - https://uk.farnell.com/?pf_custSiteRedirect=true
 - https://www.thorlabs.com/
 
-### Some Hackster projects
+### 3.2. Some Hackster projects
 
 - :star:[FytoScope Chamber FS 130](http://growth-chambers.com/products/small-fytoscopes/fytoscope-chamber-130/#details) from Photon
 - [Biomaker Tutorial](https://www.hackster.io/159756/biomaker-tutorial-1-getting-started-4fc966)
@@ -60,20 +78,20 @@ quick thoughts can be added here
 
 Refer to some plant growth products and facility that have been using in real plant research (e.g. in PGF) and [gardin](https://gard.in/) (This is very expensive so probably we won't use them in our project.)
 
-### Device
+### 3.3. Device
 
-#### Relay
+#### 3.3.1. Relay
 
 - [Connecting a 12v 8 Channel Relay to an External Power Supply and RaspberryPi](https://medium.com/@jinky32/connecting-a-12v-8-channel-relay-to-an-external-power-supply-and-raspberrypi-6fec119c112c)  
 - [Control High Voltage Devices with Arduino](https://howtomechatronics.com/tutorials/arduino/control-high-voltage-devices-arduino-relay-tutorial/)
 
-#### WiFi
+#### 3.3.2. WiFi
 
 Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or [SparkFun ESP8266 Thing Dev Board](learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide).
 
-### XOD libraries
+### 3.4. XOD libraries
 
-#### Hardware
+#### 3.4.1. Hardware
 
 *specific to Open-Smart Rich UNO R3 board:*
 
@@ -88,12 +106,12 @@ Arduino there are some modules based on the [ESP8266 microchip](https://en.wikip
 
 - gweimer/utils
 
-#### Basic XOD elements
+#### 3.4.2. Basic XOD elements
 
 - Format number: *format-number* node
 - *join* node
 
-### Other references
+### 3.5. Other references
 
 - [Robotic arm](https://shop.pimoroni.com/products/mearm-robot-raspberry-pi-kit?variant=21775370223699&currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=google+shopping?utm_source=google&utm_medium=surfaces&utm_campaign=shopping&gclid=Cj0KCQiA48j9BRC-ARIsAMQu3WTvhcmb-bZv5fxLHJMAYPL-1Bl-ShvdAIO8ML_nc9I4GpWhqUfcmDkaAn6uEALw_wcB), [Makeblock robot](https://www.makeblock.com/cn/mbot/)
 - https://www.nature.com/articles/d41586-019-01590-z
@@ -101,7 +119,7 @@ Arduino there are some modules based on the [ESP8266 microchip](https://en.wikip
 - [BENEFICIAL BIO](https://beneficial.bio/)
 - [Photon-plant phenotyping systems](http://plantphenotyping.com/)
 
-### Questions:
+### 3.6. Questions:
 
 1. How to search XOD nodes? 
 2. How to create our own nodes? And how hard/easy is this?
