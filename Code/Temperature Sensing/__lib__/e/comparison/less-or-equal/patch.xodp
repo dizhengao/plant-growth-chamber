@@ -1,0 +1,43 @@
+{
+  "description": "Outputs true if LHS <= RHS, and false otherwise",
+  "nodes": [
+    {
+      "id": "Bkzs26XJDf",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "Bybo3pXywM",
+      "label": "RHS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "S1gs26myDM",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-boolean"
+    },
+    {
+      "id": "S1jhaXJvf",
+      "label": "LHS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}
