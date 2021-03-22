@@ -1,8 +1,6 @@
 
 #include <Wire.h>
 #include <SoftwareSerial.h>
-
-#include "RichUNOTM1637.h"
 #include "RichUNOLM75.h"
 
 // constants won't change. Used here to set a pin number:
