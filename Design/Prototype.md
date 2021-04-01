@@ -19,7 +19,7 @@ This file aims at documenting setup of the chamber.
   - [4. Control](#4-control)
     - [4.1. Temperature control](#41-temperature-control)
     - [4.2. Light](#42-light)
-  - [5. Data logging](#5-data-logging)
+  - [5. Data logging and visualisation](#5-data-logging-and-visualisation)
 
 ## 1. Overview
 
@@ -95,9 +95,7 @@ Address should be 20h (or 0x20), the document provided by the biomarker website 
 
 ### 3.5. Camera
 
-[Pi Camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/4) control with Python.
-
-See full instruction on how to set up Raspberry pi camera [here](../Code/Raspi-Camera/instruction.md). Live stream can be viewed on adafruit IO's [feed](https://io.adafruit.com/Deebug/feeds/pi-camera) page.
+See full instruction on how to set up [Raspberry pi camera](../Code/Camera/instruction-PiCamera.md) or [webcam](../Code/Camera/instruction-Webcam.md) through USB. Live stream can be viewed on adafruit IO's [feed](https://io.adafruit.com/Deebug/feeds/pi-camera) page.
 
 ## 4. Control
 
@@ -119,8 +117,8 @@ LED panels from Photon (Czech):
   -  High light output - up to 3,000 µmol.m-2.s-1 at the distance of 20 cm
   - £4,500 with a controller
 
-## 5. Data logging
+## 5. Data logging and visualisation
 
-Connect Arduino to Rpi, and use Rpi to upload data to a cloud.
+Connect Arduino to Rpi, and use Rpi to upload data to a Adafruit-IO or use Heroku.
 
-Display on LCD screen.
+Also display on a LCD screen.

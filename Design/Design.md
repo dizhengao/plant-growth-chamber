@@ -17,6 +17,8 @@ This file summaries general design ideas and resources to build the project.
       - [3.6.1. XOD libraries for Open-Smart Rich UNO R3](#361-xod-libraries-for-open-smart-rich-uno-r3)
       - [3.6.2. Basic XOD elements](#362-basic-xod-elements)
     - [3.7. Other references](#37-other-references)
+    - [3.8. Arduino-Rpi communication](#38-arduino-rpi-communication)
+    - [3.9. Raspberry pi](#39-raspberry-pi)
   - [4. Knowledge](#4-knowledge)
     - [4.1. Electrical Sensors](#41-electrical-sensors)
     - [4.2. WiFi modules](#42-wifi-modules)
@@ -118,6 +120,22 @@ Add resources here.
 - [Open-source lab](https://www.appropedia.org/Open-source_Lab)
 - [BENEFICIAL BIO](https://beneficial.bio/)
 - [Photon-plant phenotyping systems](http://plantphenotyping.com/)
+
+### 3.8. Arduino-Rpi communication
+
+An introduction [article](https://roboticsbackend.com/raspberry-pi-arduino-serial-communication/).
+
+Python packages: [pySerial API](https://pyserial.readthedocs.io/en/latest/pyserial_api.html)
+
+On Arduino side: [UART](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
+
+### 3.9. Raspberry pi
+
+- [Pi Camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/4) control with Python.
+- Live stream with [USB webcam on local browser](https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/) or with [pi-camera](https://learn.adafruit.com/cloud-cam-connected-raspberry-pi-security-camera/adafruit-io), [pi-camera using motion](https://learn.adafruit.com/cloud-cam-connected-raspberry-pi-security-camera?view=all). Also see this for a wayaround 
+- [rsync](https://www.raspberrypi.org/documentation/remote-access/ssh/rsync.md)
+- [Servo moter](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor)
+- [Power Control](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-13-power-control)
 
 ## 4. Knowledge
 
