@@ -4,15 +4,19 @@
 
 This is to clarify priority.
 
-Last update: 15.3.21
+Last update: 5.4.21
 
 0. [x] [Application](#application-done) and first-month 'report'
-1. [ ] [Che]Sensors assembly: Seeed thermo&humidity sensor, light sensor.
+1. [x] [Che]Sensors assembly: Seeed thermo&humidity sensor, light sensor.
 2. [ ] [Che]Temperature and light control.
-3. [ ] [Debug]Data logging: to cloud and LCD screen.
+3. [x] [Debug]Data logging: 
+   1. [x] Cloud 
+   2. [ ] LCD screen.
 4. [ ] [Debug]3D-print plates.
-5. [ ] Camera.
-6. [ ] Data visualization on the 2nd Pi: real-time images, sensor data, remote control.
+5. [x] Camera.
+6. [x] Data visualization on the 2nd Pi
+   1. [x] real-time images, sensor data
+   2. [ ] remote control.
 7. [ ] Chamber assembly, circuit position into the chamber, light and camera ready.
 
 ## Time table
@@ -48,7 +52,7 @@ Che wrote:
 
 Last update: 18.3.21
 
-- [ ] Arduino-Pi communication (UART)
+- [x] Arduino-Pi communication (UART)
 - [x] XOD
 - [ ] electromechanical relay
 - [ ] Voltage divider
