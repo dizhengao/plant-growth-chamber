@@ -57,6 +57,7 @@ This webpage contains useful information about integrated sensors for RaspberryP
 - [ ] PLA filament 1.75mm (>2kg?)
 - [ ] Raspberry pi touch screen and case (proper case)
 - [ ] wifi.
+- [ ] Long Rpi ribbon cable.
 - [ ] ? For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very very expensive (>£200)
 - [x] Cutting pad (绿色)
 - [x] Insulation panels (if using polystyrene box then may skip that)
