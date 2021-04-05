@@ -25,48 +25,37 @@ void setup() {
   // put your setup code here, to run once:
   
   Serial.begin(9600);
-    while (!Serial);
-    while (!bme680.init()) {
-        Serial.println("bme680 init failed ! can't find device!");
-    }
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-  if (bme680.read_sensor_data()) {
-        Serial.println("Failed to perform reading :(");
-        return;
-    }
-    Serial.print("temperature ===>> ");
-    Serial.print(bme680.sensor_result_value.temperature);
-    Serial.println(" C");
-
-    Serial.print("pressure ===>> ");
-    Serial.print(bme680.sensor_result_value.pressure / 1000.0);
-    Serial.println(" KPa");
-
-    Serial.print("humidity ===>> ");
-    Serial.print(bme680.sensor_result_value.humidity);
-    Serial.println(" %");
-
-    Serial.println();
-    Serial.println();
-
-  float Temp_LM75_built_in;
-  float Temp_NTC_read;
-  float Water_level;
-  Temp_LM75_built_in = temper75.getTemperatue();//get temperature from LM75 sensor
-  Temp_NTC_read = temperNTC.read_ntc_sensor_temp();
   
-  Serial.print("Temp(LM75 Arduino Built in) "); 
-  Serial.print(Temp_LM75_built_in);
-  Serial.println(" *C");
-  Serial.println("\n");
-  Serial.print("Temp(NTC)"); 
-  Serial.println(Temp_NTC_read);
-  Serial.println(" *C");
+    float Temp_LM75_built_in;
+    float Temp_NTC_read;
+    float Water_level;
+    Temp_LM75_built_in = temper75.getTemperatue();//get temperature from LM75 sensor
+    Temp_NTC_read = temperNTC.read_ntc_sensor_temp();// get temperature from NTC sensor
+ 
+    
+    // Arduino Built in Temp
+    Serial.print(Temp_LM75_built_in);
+    Serial.print(",");
+    
+    // Bme Temp oC
+    Serial.print(bme680.sensor_result_value.temperature);
+    Serial.print(",");
 
-  delay(2000);
-
+    // NTC Temp 
+    Serial.print(Temp_NTC_read);
+    Serial.print("\n");
+     
+    // Bme Pressure kPa
+    Serial.print(bme680.sensor_result_value.pressure / 1000.0);
+    Serial.print(",");
+    
+    // Bme Humidity %
+    Serial.print(bme680.sensor_result_value.humidity);
+    Serial.print(",");
+    
+    delay(1000);
 }
