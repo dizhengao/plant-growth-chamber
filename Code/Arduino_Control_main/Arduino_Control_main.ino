@@ -47,7 +47,7 @@ void loop() {
 
     // NTC Temp 
     Serial.print(Temp_NTC_read);
-    Serial.print("\n");
+    Serial.print(",");
      
     // Bme Pressure kPa
     Serial.print(bme680.sensor_result_value.pressure / 1000.0);
@@ -55,7 +55,7 @@ void loop() {
     
     // Bme Humidity %
     Serial.print(bme680.sensor_result_value.humidity);
-    Serial.print(",");
+    Serial.print("\n");
     
     delay(1000);
 }

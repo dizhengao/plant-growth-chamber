@@ -19,7 +19,7 @@ if __name__ == '__main__':
     ser.flush()    
     
     #--------------------------------------------------- Configure Adafruit-IO---------------------------------
-    aio = Client(username = 'Deebug',key = 'aio_bCWJ83ZfBddeJvZUQKC2frkJXub0') # Put username and AIO key here
+    aio = Client(username = 'Deebug',key = 'xxx') # Put username and AIO key here
 
     camera_feed = aio.feeds('pi-camera')
     image = '/home/pi/Documents/Chamber/snapshot.jpg' 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     while True:
 
         #-----------------------------------image capture and upload-------------------------------------------------------------
-        os.system('fswebcam -q --no-banner --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
+        os.system('fswebcam -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
             
         with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
             base_str = base64.b64encode(imageFile.read())
@@ -79,7 +79,7 @@ if __name__ == '__main__':
             if not os.path.isfile(fname): # in order to save each day's data into individual .csv files, we first check if a file coresponding to that date exists, if not we create the file and add header as the first line.
                 os.system('echo ' + header + ' >> log_$(date +%y%m%d).csv')
 
-            datalog = str(current_time) + parameter
+            datalog = str(current_time) + ',' + str(line)
             os.system('echo ' + datalog + ' >> log_$(date +%y%m%d).csv')
 
         time.sleep(30) # repeat every roughly 60 seconds (actually a bit longer than 60s as the image cature takes another 1-2 s)
