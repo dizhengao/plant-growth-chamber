@@ -25,11 +25,19 @@ void setup() {
   // put your setup code here, to run once:
   
   Serial.begin(9600);
+  while (!Serial);  
+  while (!bme680.init()) {
+        Serial.println("bme680 init failed ! can't find device!");
+        delay(10000);
+    }
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+  if (bme680.read_sensor_data()) {
+        Serial.println("Failed to perform reading :(");
+        return;
+    }
     float Temp_LM75_built_in;
     float Temp_NTC_read;
     float Water_level;
