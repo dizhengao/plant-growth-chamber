@@ -2,6 +2,7 @@
 
 # This will be the main Python script to upload images and sensor data to Adafruit-IO
 
+import serial
 from Adafruit_IO import Client
 from PIL import Image
 import base64
@@ -9,52 +10,76 @@ from datetime import datetime
 import time 
 import os 
 
-aio = Client(username = 'Deebug',key = 'xxx') # Put username and AIO key here
+dir_base = '/home/pi/Documents/Chamber/'
 
-camera_feed = aio.feeds('pi-camera')
-image = '/home/pi/Camera/snapshot.jpg' 
+if __name__ == '__main__':
 
-xxx_feed = aio.feeds('xxx') # TODO A list of sensor feeds
-
-#f = open('/home/pi/Camera/log.txt', 'a+') # This is to write log files. Can disable this after tests as the log files may accumulate to take up a large space.
-
-count = 0 # This is to count how many images have been taken and uploaded and also report the number of loops.
-
-now = datetime.now()
-current_time = now.strftime('%H:%M:%S')
-print(str(current_time) + ': live stream and data logging starts.')
-
-while True:
+    #--------------------------------------------------- Configure serial communication---------------------------------
+    ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+    ser.flush()    
     
-    #-----------------------------------image capture and upload-------------------------------------------------------------
+    #--------------------------------------------------- Configure Adafruit-IO---------------------------------
+    aio = Client(username = 'Deebug',key = 'aio_bCWJ83ZfBddeJvZUQKC2frkJXub0') # Put username and AIO key here
 
-    os.system('fswebcam -q -r 1280x720 --no-banner --jpeg 60 --save /home/pi/Camera/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
-    
-    with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
-        base_str = base64.b64encode(imageFile.read())
-        base_str = base_str.decode('utf-8')
+    camera_feed = aio.feeds('pi-camera')
+    image = '/home/pi/Documents/Chamber/snapshot.jpg' 
 
-        aio.send_data(camera_feed.key, base_str) # Send data to Adafruit-IO. First argument is the name of your feed.
+    temp_bme_feed = aio.feeds('temp-bme')
+    temp_ntc_feed = aio.feeds('temp-ntc')
+    temp_lm75_feed = aio.feeds('temp-lm75') 
+    pressure_feed = aio.feeds('pressure') 
+    hum_feed = aio.feeds('humidity') # TODO Can add more sensor feeds
+
+    count = 0 # This is to count how many images have been taken and uploaded and also report the number of loops.
 
     now = datetime.now()
     current_time = now.strftime('%H:%M:%S')
+    print(str(current_time) + ': live stream and data logging starts.')
 
-    #f.write(current_time + ': Image uploaded. Base64 = ' + str(base_str) + '\n') # Writing log file for debugging purposes. Can change the content to test different parameters.
-    
-    count = count + 1
-    if count % 10 == 0:
-        print(str(current_time) + ': ' + str(count) + ' images uploaded to Adafruit-io...')
-    elif count == 1:
-        print(str(current_time) + ': ' + str(count) + ' image uploaded to Adafruit-io...')
-    
-    #TODO -----------------------------------sensor data upload-------------------------------------------------------------
+    #--------------------------------------------------- Loop---------------------------------
 
-    if count % 150 == 0: # upload sensor data every 5 min.
-        
-        #TODO 1. Import sensor data
-        #TODO 2. Convert to string or int or float
-        #TODO 3. send to aio by: aio.send_data(xxx_feed.key, data_point)
+    while True:
 
-    time.sleep(2) # repeat every roughly 2 seconds (actually a bit longer than 2s as the image cature takes another 1-2 s)
+        #-----------------------------------image capture and upload-------------------------------------------------------------
+        os.system('fswebcam -q --no-banner --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
+            
+        with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
+            base_str = base64.b64encode(imageFile.read())
+            base_str = base_str.decode('utf-8')
 
-#f.close() # close log file. Disabled here.
+            aio.send_data(camera_feed.key, base_str) # Send data to Adafruit-IO. First argument is the name of your feed.
+
+            now = datetime.now()
+            current_time = now.strftime('%H:%M:%S')
+            current_day = now.strftime('%y%m%d')
+            
+            count = count + 1
+            if count % 10 == 0:
+                print(str(current_time) + ': ' + str(count) + ' images uploaded to Adafruit-io...')
+            elif count == 1:
+                print(str(current_time) + ': ' + str(count) + ' image uploaded to Adafruit-io...')
+
+        #-----------------------------------sensor data upload-------------------------------------------------------------
+        if ser.in_waiting > 0:
+            
+            line = ser.readline().decode('utf-8').rstrip()
+
+            parameter = line.split(',') # a list of parameters: Temp (BME680), pressure, humidity, Temp (LM75), Temp (NTC)
+            # a list of parameters: Temp (LM75), Temp (BME680), Temp (NTC), Pressure, Humidity
+
+            aio.send_data(temp_lm75_feed.key, parameter[0])
+            aio.send_data(temp_bme_feed.key, parameter[1])
+            aio.send_data(temp_ntc_feed.key, parameter[2])
+            aio.send_data(pressure_feed.key, parameter[3])
+            aio.send_data(hum_feed.key, parameter[4])
+
+            header = 'Time,Temp_LM75/oC,Temp_BME680/oC,Temp_NTC/oC,Pressure/kPa,Humidity/%'
+
+            fname = 'log_' + current_day + '.csv'
+            if not os.path.isfile(fname): # in order to save each day's data into individual .csv files, we first check if a file coresponding to that date exists, if not we create the file and add header as the first line.
+                os.system('echo ' + header + ' >> log_$(date +%y%m%d).csv')
+
+            datalog = str(current_time) + parameter
+            os.system('echo ' + datalog + ' >> log_$(date +%y%m%d).csv')
+
+        time.sleep(30) # repeat every roughly 60 seconds (actually a bit longer than 60s as the image cature takes another 1-2 s)

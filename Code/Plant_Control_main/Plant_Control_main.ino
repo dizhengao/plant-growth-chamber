@@ -26,11 +26,8 @@ void setup() {
   
   Serial.begin(9600);
     while (!Serial);
-    Serial.println("Serial start!!!");
-    delay(100);
     while (!bme680.init()) {
         Serial.println("bme680 init failed ! can't find device!");
-        delay(10000);
     }
 }
 

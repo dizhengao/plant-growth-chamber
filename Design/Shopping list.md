@@ -52,6 +52,7 @@ This webpage contains useful information about integrated sensors for RaspberryP
 
 ## 3. To Buy
 
+- [ ] 接线板
 - [ ] [JKL Components White LED Strip 5m 12V dc, ZFS-155000-CW RS Stock No. 123-1037](https://uk.rs-online.com/web/p/led-strip-lights/1231037/) £132.24, 6500ºK, 6925 lum, 159.28 umol/s PPFD
 - [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168)
 - [ ] PLA filament 1.75mm (>2kg?)
