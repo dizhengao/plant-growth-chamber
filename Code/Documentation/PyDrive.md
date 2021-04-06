@@ -22,7 +22,7 @@ Official document is [here](https://googleworkspace.github.io/PyDrive/docs/build
 6. Click ‘Create’.
 7. Click ‘Download JSON’ on the right side of Client ID to download client_secret_<really long ID>.json.
 8. The downloaded file has all authentication information of your application. Rename the file to “client_secrets.json” and place it in your working directory.
-9. Create quickstart.py file and copy and paste the following code.
+9. Create a quickstart.py file and copy and paste the following code.
 
 ```python
 from pydrive.auth import GoogleAuth
