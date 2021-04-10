@@ -19,6 +19,17 @@ drive = GoogleDrive(gauth) # Create GoogleDrive instance with authenticated Goog
 
 dir_base = '/home/pi/Documents/Chamber/'
 
+def folderid(date):
+    # Input a date and return the folder ID of that date
+    folders = drive.ListFile({'q': "title='" + date + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
+    
+    if len(folders) == 1: # make sure folder is unique
+        return(folders[0]['id'])
+    elif len(folders) == 0:
+        print('Error: Cannot Find Folder on Google Drive: ' + date)
+    elif len(folders) > 1: 
+        print('Error: Duplicate Folder on Google Drive: ' + date)
+
 if __name__ == '__main__':
 
     #--------------------------------------------------- Configure serial communication---------------------------------
@@ -50,6 +61,8 @@ if __name__ == '__main__':
         now = datetime.now()
         current_time = now.strftime('%H.%M.%S')
         current_day = now.strftime('%y%m%d')
+        yesterday = datetime.today() - timedelta(days = 1)
+        yester_day = yesterday.strftime('%y%m%d')
         past = datetime.today() - timedelta(days = 3)
         past_day = past.strftime('%y%m%d')
 
@@ -85,32 +98,35 @@ if __name__ == '__main__':
             header = 'Time\(H.M.S\),Temp_LM75/oC,Temp_BME680/oC,Temp_NTC/oC,Pressure/kPa,Humidity/%'
 
         #---------------------------------Save csv files and images together into folders-------------------------
-            if not os.path.exists(current_day): # create a folder named with date and save .csv and images on that date to that folder.
-                os.makedirs(current_day)
-                os.system('echo ' + header + ' >> ' + current_day + '/log_$(date +%y%m%d).csv')
 
+            if not os.path.exists(current_day): # On a new day, create a folder named with the date and save upcoming .csv and images on that date to that folder.
+                os.makedirs(current_day)
+                os.system('echo ' + header + ' >> ' + current_day + '/log_$(date +%y%m%d).csv') # create .csv log file for that day and add the header
+
+                #---------------------------------Create a folder on google drive-----------------------
                 folder_metadata = {'title' : current_day, 'mimeType' : 'application/vnd.google-apps.folder'}
                 folder = drive.CreateFile(folder_metadata)
                 folder.Upload()
-                folderid = folder['id']
 
-                #--------------auto delete data from 3 days ago on local Raspberry pi-----------------------
+                #-------------------------------Upload yesterday's .csv log file to google drive-----------------------
+                csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(yester_day)}]})
+                csv_file.SetContentFile(yester_day + '/log_' + yester_day + '.csv')
+                csv_file.Upload()
+
+                #-------------------------------Auto delete data from 3 days ago on Raspberry pi to save local memory-----------------------
                 if os.path.exists(past_day):
                     shutil.rmtree(past_day)
 
             datalog = str(current_time) + ',' + str(line)
             os.system('echo ' + datalog + ' >> ' + current_day + '/log_$(date +%y%m%d).csv')
         
-            if count % 120 == 0: # Upload an high-resolution image and .csv to google drive every 1h.
+            if count % 60 == 0: # Upload an high-resolution image to google drive every half an hour.
                 os.system('raspistill -o ' + current_day + '/' + current_time + '.jpg')
-                
-                img_file = drive.CreateFile({'title' : current_time + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid}]})
+
+                img_file = drive.CreateFile({'title' : current_time + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(current_day)}]})
                 img_file.SetContentFile(current_day + '/' + current_time + '.jpg')
                 img_file.Upload()
 
-                csv_file = drive.CreateFile({'title' : 'log_' + current_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid}]})
-                csv_file.SetContentFile(current_day + '/log_' + current_day + '.csv')
-                csv_file.Upload()
+
 
         time.sleep(30) # repeat every roughly 30 seconds (actually a bit longer than 60s as the image cature takes another 1-2 s)
-
