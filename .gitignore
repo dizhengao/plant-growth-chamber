@@ -1,6 +1,4 @@
 # Comment out those in the final project.
-# test/
 Application/
-.DS_Store
 Code/Raspi_Control_main/key.txt
 Code/Raspi_Control_main/client_secrets.json
