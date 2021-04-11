@@ -21,14 +21,4 @@ for i=1:5
 end
 close(video); %close the file
 
-%%
-t = datetime('today')
-
-formatOut = 'yymmdd';
-datestr(t,formatOut)
-
-t2 = t + days(1)
-datestr(t2,formatOut)
-
-tin = datetime([2021 04 06])
 
