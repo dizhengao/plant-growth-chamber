@@ -2,3 +2,4 @@
 Application/
 Code/Raspi_Control_main/key.txt
 Code/Raspi_Control_main/client_secrets.json
+*.asv
