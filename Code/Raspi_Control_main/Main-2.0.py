@@ -37,7 +37,9 @@ if __name__ == '__main__':
     ser.flush()
     
     #--------------------------------------------------- Configure Adafruit-IO---------------------------------
+    print('Connecting to Adafruit-IO...')
     aio = Client(username = 'Deebug',key = 'xxx') # Put username and AIO key here
+    print('Adafruit-IO Connected!')
 
     camera_feed = aio.feeds('pi-camera')
     image = '/home/pi/Documents/Chamber/snapshot.jpg' 
@@ -67,7 +69,7 @@ if __name__ == '__main__':
         past_day = past.strftime('%y%m%d')
 
         #-----------------------------------image capture and upload-------------------------------------------------------------
-        os.system('fswebcam -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
+        os.system('fswebcam --flip v -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
             
         with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
             base_str = base64.b64encode(imageFile.read())
@@ -109,9 +111,10 @@ if __name__ == '__main__':
                 folder.Upload()
 
                 #-------------------------------Upload yesterday's .csv log file to google drive-----------------------
-                csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(yester_day)}]})
-                csv_file.SetContentFile(yester_day + '/log_' + yester_day + '.csv')
-                csv_file.Upload()
+                if os.path.exists(yester_day):
+                    csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(yester_day)}]})
+                    csv_file.SetContentFile(yester_day + '/log_' + yester_day + '.csv')
+                    csv_file.Upload()
 
                 #-------------------------------Auto delete data from 3 days ago on Raspberry pi to save local memory-----------------------
                 if os.path.exists(past_day):
@@ -121,12 +124,11 @@ if __name__ == '__main__':
             os.system('echo ' + datalog + ' >> ' + current_day + '/log_$(date +%y%m%d).csv')
         
             if count % 60 == 0: # Upload an high-resolution image to google drive every half an hour.
-                os.system('raspistill -o ' + current_day + '/' + current_time + '.jpg')
+                os.system('raspistill -vf -o ' + current_day + '/' + current_time + '.jpg')
 
                 img_file = drive.CreateFile({'title' : current_time + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(current_day)}]})
                 img_file.SetContentFile(current_day + '/' + current_time + '.jpg')
                 img_file.Upload()
 
-
-
         time.sleep(30) # repeat every roughly 30 seconds (actually a bit longer than 60s as the image cature takes another 1-2 s)
+        ser.reset_input_buffer()
