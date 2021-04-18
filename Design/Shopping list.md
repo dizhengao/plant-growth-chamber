@@ -20,7 +20,7 @@ Code PDGU.EZZZ
 This webpage contains useful information about integrated sensors for RaspberryPi: [RaspberryPi sensor list and tutorial](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
 
 ## 2. 已购
-
+0. [Pump](https://www.ebay.co.uk/itm/MINI-SUBMERSIBLE-WATER-PUMP-3V-to-6V-DC-AQUARIUM-arduino-UK-seller-BBC-micro/122508463023): DC Voltage:2.5-6V. Maximum lift:40-110cm. Flow rate:80-120L/H
 1. **Two** Raspberry Pi 4 B 4GB, RS Stock No. 182-2096, https://uk.rs-online.com/web/p/raspberry-pi/1822096/
 2. LCD Touch Screen with 7in Capacitive Touch Screen, RS Stock No. 899-7466, https://uk.rs-online.com/web/p/products/8997466/
 3. Two Sandisk Storage Card 16Gb, RS Stock No. 121-3897, https://uk.rs-online.com/web/p/products/1213897/
@@ -53,13 +53,16 @@ This webpage contains useful information about integrated sensors for RaspberryP
 ## 3. To Buy
 
 - [ ] 接线板
+- [ ] More water pump
+- [ ] heater!
 - [ ] A better Tm and Hum sensor for calibration?
 - [ ] [JKL Components White LED Strip 5m 12V dc, ZFS-155000-CW RS Stock No. 123-1037](https://uk.rs-online.com/web/p/led-strip-lights/1231037/) £132.24, 6500ºK, 6925 lum, 159.28 umol/s PPFD
+- [ ] Heating?
 - [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168)
 - [ ] PLA filament 1.75mm (>2kg?)
-- [ ] Raspberry pi touch screen and case (proper case)
-- [ ] wifi.
-- [ ] Long Rpi ribbon cable.
+- [ ] Another Rpi, Raspberry pi touch screen and case (proper case)
+- [ ] wifi?
+- [x] Long Rpi ribbon cable.
 - [ ] ? For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very very expensive (>£200)
 - [x] Cutting pad (绿色)
 - [x] Insulation panels (if using polystyrene box then may skip that)

@@ -39,12 +39,11 @@ quick thoughts can be added here
 
 [20201115-ZD] Expand the prototype to larger scale: Use a robot with a camera to move around and take pictures of plants every xx minutes/hours; or install tracks for camera on the top of the chamber to take images every xx minute/hour.
 
-
 ## 2. Questions
 
 *Mar 21*
 
-1. [ ] How to connect Arduino to Rpi, and use Rpi to upload data to a cloud?
+1. [x] How to connect Arduino to Rpi, and use Rpi to upload data to a cloud?
 
 *Feb 21 - sadly we no longer use XOD*
 

@@ -19,6 +19,24 @@ Last update: 5.4.21
    2. [ ] remote control.
 7. [ ] Chamber assembly, circuit position into the chamber, light and camera ready.
 
+## Meetings
+
+### 17.4.2021
+
+Aim:
+
+- Assemble the chamber
+- Temperature control, air circulation: fan, relay, heater.
+- LCD screen for visualisation.
+- [After] Order more hardware, especially light source.
+- [After] Print the plate.
+
+Minutes:
+
+- Relay: able to drive fan. 
+- But heater is not working.
+- Water pump is running: i.e. water every 2 days, 30s each time. #TODO ZD needs to add serial-write to Main.py on Rpi.
+
 ## Time table
 
 ### Past
@@ -33,7 +51,16 @@ Last update: 5.4.21
 | ---------- | ----------------------------------------------- | --------- | ----- |
 | March      | Sensors                                         | Controls  | ??    |
 | Apr        | Growth condition control (Temp,Hum,Light,Water) | ??        | ??    |
-| May        | Remote monitor and control                      | ??        | ??    |
+| May        | More robust Environment control                      | ??        | ??    |
+
+## April report
+
+Prototype:
+
+1. Chamber assembly
+2. Sensors and environment controls
+3. Webserver
+4. Update Hackstor.
 
 ## Application (Done)
 

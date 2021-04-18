@@ -19,6 +19,8 @@ drive = GoogleDrive(gauth) # Create GoogleDrive instance with authenticated Goog
 
 dir_base = '/home/pi/Documents/Chamber/'
 
+water_interval = 48 # number of hours between each watering event
+
 def folderid(date):
     # Input a date and return the folder ID of that date
     folders = drive.ListFile({'q': "title='" + date + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
@@ -29,6 +31,15 @@ def folderid(date):
         print('Error: Cannot Find Folder on Google Drive: ' + date)
     elif len(folders) > 1: 
         print('Error: Duplicate Folder on Google Drive: ' + date)
+
+def irrigation(water_interval = 48):
+    now = datetime.now()
+
+    last_water = datetime.strptime(open('WaterLog','r').read(), '%M.%H.%d.%m.%y') # read the time of last watering event from WaterLog file. Time is stored in this file as a string in the format 'minute.hour.day.month.year'
+    delta = now - last_water
+    if (delta.days*24 + delta.seconds/3600) > water_interval:
+        ser.write(b'water\n') # send a 'water' signal to Arduino board
+        os.system('echo ' + now.strftime('%M.%H.%d.%m.%y') + ' > WaterLog')
 
 if __name__ == '__main__':
 
@@ -69,7 +80,7 @@ if __name__ == '__main__':
         past_day = past.strftime('%y%m%d')
 
         #-----------------------------------image capture and upload-------------------------------------------------------------
-        os.system('fswebcam --flip v -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
+        os.system('fswebcam -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
             
         with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
             base_str = base64.b64encode(imageFile.read())
@@ -124,11 +135,15 @@ if __name__ == '__main__':
             os.system('echo ' + datalog + ' >> ' + current_day + '/log_$(date +%y%m%d).csv')
         
             if count % 60 == 0: # Upload an high-resolution image to google drive every half an hour.
-                os.system('raspistill -vf -o ' + current_day + '/' + current_time + '.jpg')
+                os.system('raspistill -o ' + current_day + '/' + current_time + '.jpg')
 
                 img_file = drive.CreateFile({'title' : current_time + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(current_day)}]})
                 img_file.SetContentFile(current_day + '/' + current_time + '.jpg')
                 img_file.Upload()
+
+        #-------------------------------Auto-irrigation every two days-----------------------
+        if count % 120 == 0: # Check if it is time to water every 1 hour.
+            irrigation()
 
         time.sleep(30) # repeat every roughly 30 seconds (actually a bit longer than 60s as the image cature takes another 1-2 s)
         ser.reset_input_buffer()
