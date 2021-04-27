@@ -4,7 +4,7 @@ This documents how to set up PyDrive on Rpi to upload figures and csv files to g
 
 Refer to official documentation [here](https://googleworkspace.github.io/PyDrive/docs/build/html/index.html).
 
-## Installing PyDrive
+## Install PyDrive
 
 ```bash
 pip3 install PyDrive

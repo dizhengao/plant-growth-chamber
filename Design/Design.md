@@ -11,6 +11,7 @@ This file summaries general design ideas and resources to build the project.
     - [3.3. Hardware](#33-hardware)
       - [3.3.1. Relay](#331-relay)
       - [3.3.2. WiFi](#332-wifi)
+      - [3.3.3. 4D Systems programmable touchscreen](#333-4d-systems-programmable-touchscreen)
     - [3.4. Software-Arduino IDE](#34-software-arduino-ide)
     - [3.5. Software-3D printing](#35-software-3d-printing)
     - [3.6. Software-XOD](#36-software-xod)
@@ -24,10 +25,13 @@ This file summaries general design ideas and resources to build the project.
     - [4.2. WiFi modules](#42-wifi-modules)
     - [4.3. Programming on Hardware](#43-programming-on-hardware)
     - [4.4. DIY](#44-diy)
+  - [5. Papers](#5-papers)
 
 ## 1. Ideas
 
 quick thoughts can be added here
+
+[20210420-JMH] 1. To test watering system, fill plates with soil and see the change of soil color from camera. 2. Firmly press the soil by printing a 'presser' with the same dimensions as plates. 3. Whether use compost only or with vermiculite.
 
 [20200303-ZD] Thermo cameras and fluorescence cameras. Also check out devices on [Photon](https://handheld.psi.cz/).
 
@@ -86,6 +90,10 @@ Refer to some plant growth products and facility that have been using in real pl
 #### 3.3.2. WiFi
 
 Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or [SparkFun ESP8266 Thing Dev Board](learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide).
+
+#### 3.3.3. 4D Systems programmable touchscreen
+
+[spec sheet](https://static1.squarespace.com/static/584d41b3f5e2310b396cd953/t/5ba376490e2e7299a6f96506/1537439314392/gen4-uLCD-32D_datasheet_R_1_5.pdf), [Introduction](https://static1.squarespace.com/static/584d41b3f5e2310b396cd953/t/5ba374cac2241b80e970e46f/1537438935415/Visi-Genie_userguide_R_2_0.pdf)
 
 ### 3.4. Software-Arduino IDE
 
@@ -174,3 +182,9 @@ Che wrote:
 
 - 3D printing and CAD models.
 - Robotic arms
+
+## 5. Papers
+
+1. Jolles, J. Broad-scale Applications of the Raspberry Pi: A Review and Guide for Biologists. https://ecoevorxiv.org/qh9sz/ (2021) doi:10.32942/osf.io/qh9sz.
+1. Tausen, M. et al. Greenotyper: Image-Based Plant Phenotyping Using Distributed Computing and Deep Learning. Front. Plant Sci. 11, (2020).
+1. Gaggion, N. et al. ChronoRoot: High-throughput phenotyping by deep segmentation networks reveals novel temporal parameters of plant root system architecture. bioRxiv 2020.10.27.350553 (2020) doi:10.1101/2020.10.27.350553.

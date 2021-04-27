@@ -35,7 +35,8 @@ def folderid(date):
 def irrigation(water_interval = 48):
     now = datetime.now()
 
-    last_water = datetime.strptime(open('WaterLog','r').read(), '%M.%H.%d.%m.%y') # read the time of last watering event from WaterLog file. Time is stored in this file as a string in the format 'minute.hour.day.month.year'
+    last_water_str = open('WaterLog','r').read().rstrip('\n')
+    last_water = datetime.strptime(last_water_str, '%M.%H.%d.%m.%y') # read the time of last watering event from WaterLog file. Time is stored in this file as a string in the format 'minute.hour.day.month.year'
     delta = now - last_water
     if (delta.days*24 + delta.seconds/3600) > water_interval:
         ser.write(b'water\n') # send a 'water' signal to Arduino board
@@ -123,7 +124,7 @@ if __name__ == '__main__':
 
                 #-------------------------------Upload yesterday's .csv log file to google drive-----------------------
                 if os.path.exists(yester_day):
-                    csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(yester_day)}]})
+                    csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'parents': [{'id': folderid(yester_day)}]})
                     csv_file.SetContentFile(yester_day + '/log_' + yester_day + '.csv')
                     csv_file.Upload()
 

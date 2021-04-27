@@ -4,6 +4,8 @@
   - [1. Ideas](#1-ideas)
   - [2. 已购](#2-已购)
   - [3. To Buy](#3-to-buy)
+  - [Light](#light)
+  - [Supplier](#supplier)
 
 Code PDGU.EZZZ
 
@@ -49,22 +51,118 @@ This webpage contains useful information about integrated sensors for RaspberryP
 26. 20* [N-Channel MOSFET, 33 A, 100 V, 3-Pin TO-220AB Infineon IRF540NPBF RS Stock No.: 914-8154](https://uk.rs-online.com/web/p/mosfets/9148154/) £12.28
 27. [Clever Little Box, CLB Cable Mount DC Jack Socket, 1Pole 1A RS Stock No. 810-4605](https://uk.rs-online.com/web/p/jack-plugs-sockets/8104605/) £2.78
 28. [XP Power,12V dc, 5W Plug In Power Supply, 420mA, Level VI Efficiency, 1 Output Switched Mode Power Supply, Type G RS Stock No. 121-7133](https://uk.rs-online.com/web/p/ac-dc-adapters/1217133/) £6.49
-
+29. [ON Semiconductor ALS-GEVB, Ambient Light Sensor (ALS) Shield Evaluation Board Evaluation Board for NOA1305CUTAG,RS Stock No. 171-9122](https://uk.rs-online.com/web/p/sensor-development-tools/1719122/) £6.26
+30. [brennenstuhl 3m 6 Socket Type G - British Extension Lead, 230 V RS Stock No. 768-5320 ](https://uk.rs-online.com/web/p/extension-leads-cable-reels/7685320/) £19.55
+31. [RS PRO 1.75mm White PLA 3D Printer Filament, 1kg RS Stock No. 832-0223](https://uk.rs-online.com/web/p/3d-printing-materials/8320223/) £29.17
+32. [RS PRO Silicone Heater Mat, 5 W, 50 x 100mm, 12 V dc RS Stock No. 245-528](https://uk.rs-online.com/web/p/heater-pads/0245528/) £22.21
+33. [ILS ILK-PETUNIA-01 LED Light Kit, OSLON SSL Petunia RS Stock No.: 875-0037](https://uk.rs-online.com/web/p/led-kits/8750037/) £145.60
+34. [RS PRO UK Mains Connector BS 1363, 13A, Cable Mount, 250 V ac RS Stock No. 854-380](https://uk.rs-online.com/web/p/mains-plugs-sockets/0854380/) £6.10
+35. 10* [TE Connectivity 1776293-2 Terminal Strip, 30A, 250 V Screw Screw RS Stock No. 782-2857](https://uk.rs-online.com/web/p/standard-terminal-blocks/7822857?cm_mmc=UK-PLA-DS3A-_-google-_-CSS_UK_EN_Connectors_Whoop-_-Standard+Terminal+Blocks_Whoop+(2)-_-7822857&matchtype=&aud-826607888547:pla-302090786601&gclid=Cj0KCQjwyZmEBhCpARIsALIzmnLCHxAQ4jYSvQ67LUSVpl-s1F3SjJgTcXCgc59uX36_UIUZsUNBkCMaAnZYEALw_wcB&gclsrc=aw.ds) £1.68 * 10
+37. [HellermannTyton Adhesive Lined Heat Shrink Tubing, Black 4mm Sleeve Dia. x 1.2m Length 4:1 Ratio, TA42 Series RS Stock No. 914-6802](https://uk.rs-online.com/web/p/heat-shrink-cold-shrink-sleeves/9146802/) £4.45
+ 
 ## 3. To Buy
 
-- [ ] 接线板
-- [ ] More water pump
-- [ ] heater!
-- [ ] A better Tm and Hum sensor for calibration?
 - [ ] [JKL Components White LED Strip 5m 12V dc, ZFS-155000-CW RS Stock No. 123-1037](https://uk.rs-online.com/web/p/led-strip-lights/1231037/) £132.24, 6500ºK, 6925 lum, 159.28 umol/s PPFD
-- [ ] Heating?
 - [ ] [NEOPIXELS light?](https://www.adafruit.com/category/168)
-- [ ] PLA filament 1.75mm (>2kg?)
-- [ ] Another Rpi, Raspberry pi touch screen and case (proper case)
-- [ ] wifi?
-- [x] Long Rpi ribbon cable.
 - [ ] ? For cooling: [Semiconductor refrigerator](https://www.banggood.com/Geekcreit-12V-6A-DIY-Electronic-Semiconductor-Refrigerator-Radiator-Cooling-Equipment-p-1074404.html?akmClientCountry=CN&cur_warehouse=CN)-Banggod. Or use a liquid heat exchanger (Available on RS) but this is very very expensive (>£200)
+- [ ] [grove Digital Light Sensor](https://wiki.seeedstudio.com/Sensor_light/)
+- [ ] [TS 600W LED Grow Light Full Spectrum](https://marshydroled.co.uk/products/ts-600w-led-grow-light-full-spectrum-hydroponics-indoor-lamp-for-veg-flower-all-stages-plants?currency=GBP&variant=32272546332706&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQjwvYSEBhDjARIsAJMn0lhA42Kst5ttuClaumEVEg_mW8RPD_sweJvaoMr-Z7vDvsw-rR_fL4QaAsjIEALw_wcB)
+- [ ] 
+- [ ] :star:[Intelligent LED Solutions 12-Channel Light Controller RS Stock No. 175-7451](https://uk.rs-online.com/web/p/led-lighting-controllers/1757451/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D656E267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D494C412D31324348414E4E454C2D4C45442D54554E45522D3030312E267365617263685F6B6579776F72645F6170703D494C412D31324348414E4E454C2D4C45442D54554E45522D3030312E267365617263685F636F6E6669673D3026&searchHistory=%7B%22enabled%22%3Atrue%7D)
+- [ ] https://www.adafruit.com/product/1455
+
+缺货:
+- [ ] [Raspberry Pi, LCD Touch Screen with 7in Capacitive Touch Screen RS Stock No. 899-7466](https://uk.rs-online.com/web/p/products/8997466/) £57.96
+- [ ] [Okdo ABS Case for use with Raspberry Pi 4 in Black RS Stock No. 193-5380 ](https://uk.rs-online.com/web/p/raspberry-pi-cases/1935380/) £17.99
+- [ ] [Raspberry Pi 3 B+ RS Stock No. 137-3331](https://uk.rs-online.com/web/p/products/1373331/) £33.37
+- [ ] [Raspberry Pi 4 B 4GB RS Stock No. 182-2096](https://uk.rs-online.com/web/p/raspberry-pi/1822096/) £53.22
+
+Wanted to buy but give up:
+- [x] Long Rpi ribbon cable (Other suppliers?). -> Not found on RS
+- [x] A better Tm and Hum sensor for calibration? -> Borrow from xxx
+- [ ] camera multiplexer raspberry pi -> Not found on RS
+- [ ] Wifi? -> Use Rpi
+- [x] More water pump
 - [x] Cutting pad (绿色)
 - [x] Insulation panels (if using polystyrene box then may skip that)
 - [x] 亚克力板
 - [x] 电钻
+
+## Light
+
+1. Buy a bunch of these [LED light engines](https://i-led.co.uk/LED-Light-Engines/Ledil-Lens-Selectors/Ledil-lens-selector-OSCONIQ-P7070.php)  and use Intelligent LED Solutions 12-Channel Light Controller to control them.
+2. ILS ILK-PETUNIA-01 LED Light Kit + controller
+3. [Strips](https://uk.rs-online.com/web/p/led-circular-arrays/1947653/) or [Circular Array](https://uk.rs-online.com/web/p/led-circular-arrays/1946443/) at different wavelengths + controller 
+4. [Horti Florence Light Wide Flowering](https://uk.rs-online.com/web/p/led-grow-lights/1874967/) 300 pounds
+
+
+## Supplier 
+
+RS Components
+Farnell
+CPC OneCall
+Acoustic Metrology 
+Advanced Wave Sensors SL
+Alpha Omega
+Arrow Electronics (UK) 
+Ashlea Components
+Aspen Electronics
+Atlantic Microwave 
+Audon Electronics 
+Automotion Components 
+Bangjiang Technology Electronic Co.
+Barric 
+Castle Microwave  
+Chester (UK) LTD T/A Chester Machine Tools
+Chromatechnic 
+Coilcraft Europe 
+CTS-direct.net
+Dau Components  
+Digi-Key Corporation
+Distrelec BV
+DL Instruments
+Drivetek AG
+EFS Manufacturing
+ESR Electronic Components
+Hitech Global LLC
+Holroyd Components
+Homechip
+Impact Test Equipment
+Instrotech
+ITS Testing Services T/A Isodaq Technology
+Microelectrodes INC
+Micron Consumer Products GRoup
+Mini-Circuits Europe
+Mouser Electronics INC
+National Institute of Standards and Technology
+Newbury Electronics
+Nikon Metrology Europe
+NResearch UK
+OCCO Coolers
+Ooznest 
+Pacer Components
+Plasma Quest
+Powersolve Electronics
+Printech Circuit Laboratories
+Process Parameters
+Protonics
+Rak Printed Circuit Boards
+Reichelt Electronik
+Relchron LTD T/A Protopic
+RF Com 
+Segen 
+Semikron
+Shearline Precision Engineering
+Sil'tronic Silicon Technologies
+Siltronic SAS
+Sparkfun Electronics
+Sterling Sensors
+Survey Supplies T/A Korec
+Techni Measure
+Technical Manufacturing Corporation
+Tectra GMBH
+Tektronic UK
+Toolworld
+Unmanned Tech
+Ushio UK  
+Wuhan Land Electronics Co

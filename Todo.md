@@ -1,10 +1,14 @@
 # Todo list
 
+## Urgent
+
+- [ ] A new plate and a presser
+
 ## Workflow
 
 This is to clarify priority.
 
-Last update: 5.4.21
+Last update: 27.4.21
 
 0. [x] [Application](#application-done) and first-month 'report'
 1. [x] [Che]Sensors assembly: Seeed thermo&humidity sensor, light sensor.
@@ -51,7 +55,7 @@ Minutes:
 | ---------- | ----------------------------------------------- | --------- | ----- |
 | March      | Sensors                                         | Controls  | ??    |
 | Apr        | Growth condition control (Temp,Hum,Light,Water) | ??        | ??    |
-| May        | More robust Environment control                      | ??        | ??    |
+| May        | Environment control                      | Light,LCD,remote controls        | ??    |
 
 ## April report
 
