@@ -113,7 +113,7 @@ void loop() {
   // Watering time count down
   if ( BIT(Relay_status,3)==1 && WaterRunning==1){
     CurrentTime=millis();
-    if(CurrentTime-StartTime>=30000){
+    if(CurrentTime-StartTime>=10000){
       relay.turn_off_channel(4);
       WaterRunning=0;
     }
