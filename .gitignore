@@ -3,3 +3,6 @@ Application/
 Code/Raspi_Control_main/key.txt
 Code/Raspi_Control_main/client_secrets.json
 *.asv
+
+# Ignore videos
+Trials/27.4/Trial_27.4.mp4

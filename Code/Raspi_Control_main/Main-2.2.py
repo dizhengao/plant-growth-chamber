@@ -19,7 +19,7 @@ drive = GoogleDrive(gauth) # Create GoogleDrive instance with authenticated Goog
 
 dir_base = '/home/pi/Documents/Chamber/'
 
-water_interval = 48 # number of hours between each watering event
+water_interval = 60 # number of hours between each watering event
 
 def folderid(date):
     # Input a date and return the folder ID of that date
@@ -32,13 +32,13 @@ def folderid(date):
     elif len(folders) > 1: 
         print('Error: Duplicate Folder on Google Drive: ' + date)
 
-def irrigation(water_interval = 48):
+def irrigation(Water_Interval = water_interval):
     now = datetime.now()
 
     last_water_str = open('WaterLog','r').read().rstrip('\n')
     last_water = datetime.strptime(last_water_str, '%M.%H.%d.%m.%y') # read the time of last watering event from WaterLog file. Time is stored in this file as a string in the format 'minute.hour.day.month.year'
     delta = now - last_water
-    if (delta.days*24 + delta.seconds/3600) > water_interval:
+    if (delta.days*24 + delta.seconds/3600) > Water_Interval:
         ser.write(b'water\n') # send a 'water' signal to Arduino board
         os.system('echo ' + now.strftime('%M.%H.%d.%m.%y') + ' > WaterLog')
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     count = 0 # This is to count how many images have been taken and uploaded and also report the number of loops.
 
     now = datetime.now()
-    current_time = now.strftime('%H.%M.%S')
+    current_time = now.strftime('%Y-%m-%d %H:%M:%S')
     print(str(current_time) + ': live stream and data logging starts.')
 
     #--------------------------------------------------- Loop---------------------------------
@@ -73,7 +73,8 @@ if __name__ == '__main__':
     while True:
 
         now = datetime.now()
-        current_time = now.strftime('%H.%M.%S')
+        current_time = now.strftime('%Y-%m-%d %H:%M:%S')
+        current_time_v2 = now.strftime('%Y-%m-%d_%H.%M.%S')
         current_day = now.strftime('%y%m%d')
         yesterday = datetime.today() - timedelta(days = 1)
         yester_day = yesterday.strftime('%y%m%d')
@@ -81,7 +82,7 @@ if __name__ == '__main__':
         past_day = past.strftime('%y%m%d')
 
         #-----------------------------------image capture and upload-------------------------------------------------------------
-        os.system('fswebcam -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
+        os.system('fswebcam -d v4l2:/dev/video0 -q --no-banner --jpeg 80 --save /home/pi/Documents/Chamber/snapshot.jpg') # uses fswebcam to take a picture. -q: quite mode. -r: image resolution. --jpeg 60: quality of the images (can be 0-95).
             
         with open(image, "rb") as imageFile: # read snapshot and encode it to base64 format
             base_str = base64.b64encode(imageFile.read())
@@ -100,8 +101,7 @@ if __name__ == '__main__':
             
             line = ser.readline().decode('utf-8').rstrip()
 
-            parameter = line.split(',') # a list of parameters: Temp (BME680), pressure, humidity, Temp (LM75), Temp (NTC)
-            # a list of parameters: Temp (LM75), Temp (BME680), Temp (NTC), Pressure, Humidity
+            parameter = line.split(',') # a list of parameters: Temp (BME680), pressure, humidity, Temp (LM75), Temp (NTC), Pressure, Humidity
 
             aio.send_data(temp_lm75_feed.key, parameter[0])
             aio.send_data(temp_bme_feed.key, parameter[1])
@@ -109,7 +109,7 @@ if __name__ == '__main__':
             aio.send_data(pressure_feed.key, parameter[3])
             aio.send_data(hum_feed.key, parameter[4])
 
-            header = 'Time\(H.M.S\),Temp_LM75/oC,Temp_BME680/oC,Temp_NTC/oC,Pressure/kPa,Humidity/%'
+            header = 'Time,Temp_LM75/oC,Temp_BME680/oC,Temp_NTC/oC,Pressure/kPa,Humidity/%'
 
         #---------------------------------Save csv files and images together into folders-------------------------
 
@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
                 #-------------------------------Upload yesterday's .csv log file to google drive-----------------------
                 if os.path.exists(yester_day):
-                    csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'parents': [{'id': folderid(yester_day)}]})
+                    csv_file = drive.CreateFile({'title' : 'log_' + yester_day + '.csv', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(yester_day)}]})
                     csv_file.SetContentFile(yester_day + '/log_' + yester_day + '.csv')
                     csv_file.Upload()
 
@@ -136,10 +136,10 @@ if __name__ == '__main__':
             os.system('echo ' + datalog + ' >> ' + current_day + '/log_$(date +%y%m%d).csv')
         
             if count % 60 == 0: # Upload an high-resolution image to google drive every half an hour.
-                os.system('raspistill -o ' + current_day + '/' + current_time + '.jpg')
+                os.system('raspistill -o ' + current_day + '/' + current_time_v2 + '.jpg')
 
-                img_file = drive.CreateFile({'title' : current_time + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(current_day)}]})
-                img_file.SetContentFile(current_day + '/' + current_time + '.jpg')
+                img_file = drive.CreateFile({'title' : current_time_v2 + '.jpg', 'mimeType':'image/jpeg', 'parents': [{'id': folderid(current_day)}]})
+                img_file.SetContentFile(current_day + '/' + current_time_v2 + '.jpg')
                 img_file.Upload()
 
         #-------------------------------Auto-irrigation every two days-----------------------

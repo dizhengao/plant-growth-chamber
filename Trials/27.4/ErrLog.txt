@@ -1,0 +1,31 @@
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 299, in recv_into
+    raise SocketError(str(e))
+urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError("(104, 'ECONNRESET')"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Main-2.py", line 107, in <module>
+    aio.send_data(temp_bme_feed.key, parameter[1])
+  File "/home/pi/.local/lib/python3.7/site-packages/Adafruit_IO/client.py", line 154, in send_data
+    return self.create_data(feed, payload)
+  File "/home/pi/.local/lib/python3.7/site-packages/Adafruit_IO/client.py", line 254, in create_data
+    return Data.from_dict(self._post(path, data._asdict()))
+  File "/home/pi/.local/lib/python3.7/site-packages/Adafruit_IO/client.py", line 126, in _post
+    data=json.dumps(data))
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError("(104, 'ECONNRESET')"))

@@ -25,6 +25,20 @@ Last update: 27.4.21
 
 ## Meetings
 
+### 1x.5.2021
+
+Aims:
+
+0. [ ] Discuss problems in the first trial. Plot condition data and combine images into a video.
+1. [ ] Temperature calibration.
+2. [ ] Cooling.
+3. [ ] Humidity control.
+4. [ ] Light.
+5. [ ] Irrigation:
+   1. [ ] Invertals: 60h
+   2. [ ] watering time: 30->15s
+   3. [ ] How to drain remaining water?
+
 ### 17.4.2021
 
 Aim:

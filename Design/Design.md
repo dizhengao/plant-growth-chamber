@@ -6,20 +6,21 @@ This file summaries general design ideas and resources to build the project.
   - [1. Ideas](#1-ideas)
   - [2. Questions](#2-questions)
   - [3. Reference](#3-reference)
-    - [3.1. Suppliers](#31-suppliers)
-    - [3.2. Some Hackster projects](#32-some-hackster-projects)
-    - [3.3. Hardware](#33-hardware)
-      - [3.3.1. Relay](#331-relay)
-      - [3.3.2. WiFi](#332-wifi)
-      - [3.3.3. 4D Systems programmable touchscreen](#333-4d-systems-programmable-touchscreen)
-    - [3.4. Software-Arduino IDE](#34-software-arduino-ide)
-    - [3.5. Software-3D printing](#35-software-3d-printing)
-    - [3.6. Software-XOD](#36-software-xod)
-      - [3.6.1. XOD libraries for Open-Smart Rich UNO R3](#361-xod-libraries-for-open-smart-rich-uno-r3)
-      - [3.6.2. Basic XOD elements](#362-basic-xod-elements)
-    - [3.7. Other references](#37-other-references)
-    - [3.8. Arduino-Rpi communication](#38-arduino-rpi-communication)
-    - [3.9. Raspberry pi](#39-raspberry-pi)
+    - [3.1. General](#31-general)
+    - [3.2. Suppliers](#32-suppliers)
+    - [3.3. Some Hackster projects](#33-some-hackster-projects)
+    - [3.4. Hardware](#34-hardware)
+      - [3.4.1. Relay](#341-relay)
+      - [3.4.2. WiFi](#342-wifi)
+      - [3.4.3. 4D Systems programmable touchscreen](#343-4d-systems-programmable-touchscreen)
+    - [3.5. Software-Arduino IDE](#35-software-arduino-ide)
+    - [3.6. Software-3D printing](#36-software-3d-printing)
+    - [3.7. Software-XOD](#37-software-xod)
+      - [3.7.1. XOD libraries for Open-Smart Rich UNO R3](#371-xod-libraries-for-open-smart-rich-uno-r3)
+      - [3.7.2. Basic XOD elements](#372-basic-xod-elements)
+    - [3.8. Other references](#38-other-references)
+    - [3.9. Arduino-Rpi communication](#39-arduino-rpi-communication)
+    - [3.10. Raspberry pi](#310-raspberry-pi)
   - [4. Knowledge](#4-knowledge)
     - [4.1. Electrical Sensors](#41-electrical-sensors)
     - [4.2. WiFi modules](#42-wifi-modules)
@@ -58,7 +59,11 @@ quick thoughts can be added here
 
 ## 3. Reference
 
-### 3.1. Suppliers
+### 3.1. General
+
+[Letusgrow](https://www.lettusgrow.com)
+
+### 3.2. Suppliers
 
 - [RS](https://uk.rs-online.com/web/)
 - https://thepihut.com/
@@ -68,7 +73,7 @@ quick thoughts can be added here
 - https://uk.farnell.com/?pf_custSiteRedirect=true
 - https://www.thorlabs.com/
 
-### 3.2. Some Hackster projects
+### 3.3. Some Hackster projects
 
 - :star:[FytoScope Chamber FS 130](http://growth-chambers.com/products/small-fytoscopes/fytoscope-chamber-130/#details) from Photon
 - [Biomaker Tutorial](https://www.hackster.io/159756/biomaker-tutorial-1-getting-started-4fc966)
@@ -80,32 +85,32 @@ quick thoughts can be added here
 
 Refer to some plant growth products and facility that have been using in real plant research (e.g. in PGF) and [gardin](https://gard.in/) (This is very expensive so probably we won't use them in our project.)
 
-### 3.3. Hardware
+### 3.4. Hardware
 
-#### 3.3.1. Relay
+#### 3.4.1. Relay
 
 - [Connecting a 12v 8 Channel Relay to an External Power Supply and RaspberryPi](https://medium.com/@jinky32/connecting-a-12v-8-channel-relay-to-an-external-power-supply-and-raspberrypi-6fec119c112c)  
 - [Control High Voltage Devices with Arduino](https://howtomechatronics.com/tutorials/arduino/control-high-voltage-devices-arduino-relay-tutorial/)
 
-#### 3.3.2. WiFi
+#### 3.4.2. WiFi
 
 Arduino there are some modules based on the [ESP8266 microchip](https://en.wikipedia.org/wiki/ESP8266) such as Adafruit Feather HUZZAH (I have this!, read manual [here](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266)) or [SparkFun ESP8266 Thing Dev Board](learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide).
 
-#### 3.3.3. 4D Systems programmable touchscreen
+#### 3.4.3. 4D Systems programmable touchscreen
 
 [spec sheet](https://static1.squarespace.com/static/584d41b3f5e2310b396cd953/t/5ba376490e2e7299a6f96506/1537439314392/gen4-uLCD-32D_datasheet_R_1_5.pdf), [Introduction](https://static1.squarespace.com/static/584d41b3f5e2310b396cd953/t/5ba374cac2241b80e970e46f/1537438935415/Visi-Genie_userguide_R_2_0.pdf)
 
-### 3.4. Software-Arduino IDE
+### 3.5. Software-Arduino IDE
 
 Add resources here.
 
-### 3.5. Software-3D printing
+### 3.6. Software-3D printing
 
 Add resources here.
 
-### 3.6. Software-XOD
+### 3.7. Software-XOD
 
-#### 3.6.1. XOD libraries for Open-Smart Rich UNO R3
+#### 3.7.1. XOD libraries for Open-Smart Rich UNO R3
 
 - Real time clock module: datetime (https://xod.io/libs/xod/datetime/) and ds-rtc (https://xod.io/libs/xod- dev/ds-rtc/) libraries.
 - Onboard LM75 temperature sensor: lm75a-temp-sensor node can be found in the gst/lm75atempsensor XOD library.
@@ -115,12 +120,12 @@ Add resources here.
 - OLED screen: wayland/ssd1306-oled-i2c library. Nodes: ssd1306-oled-i2c-device
 - gweimer/utils
 
-#### 3.6.2. Basic XOD elements
+#### 3.7.2. Basic XOD elements
 
 - Format number: *format-number* node
 - *join* node
 
-### 3.7. Other references
+### 3.8. Other references
 
 - [Robotic arm](https://shop.pimoroni.com/products/mearm-robot-raspberry-pi-kit?variant=21775370223699&currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=google+shopping?utm_source=google&utm_medium=surfaces&utm_campaign=shopping&gclid=Cj0KCQiA48j9BRC-ARIsAMQu3WTvhcmb-bZv5fxLHJMAYPL-1Bl-ShvdAIO8ML_nc9I4GpWhqUfcmDkaAn6uEALw_wcB), [Makeblock robot](https://www.makeblock.com/cn/mbot/)
 - https://www.nature.com/articles/d41586-019-01590-z
@@ -128,7 +133,7 @@ Add resources here.
 - [BENEFICIAL BIO](https://beneficial.bio/)
 - [Photon-plant phenotyping systems](http://plantphenotyping.com/)
 
-### 3.8. Arduino-Rpi communication
+### 3.9. Arduino-Rpi communication
 
 An introduction [article](https://roboticsbackend.com/raspberry-pi-arduino-serial-communication/).
 
@@ -136,7 +141,7 @@ Python packages: [pySerial API](https://pyserial.readthedocs.io/en/latest/pyseri
 
 On Arduino side: [UART](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
 
-### 3.9. Raspberry pi
+### 3.10. Raspberry pi
 
 - [Pi Camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/4) control with Python.
 - Live stream with [USB webcam on local browser](https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/) or with [pi-camera](https://learn.adafruit.com/cloud-cam-connected-raspberry-pi-security-camera/adafruit-io), [pi-camera using motion](https://learn.adafruit.com/cloud-cam-connected-raspberry-pi-security-camera?view=all). Also see this for a wayaround 
