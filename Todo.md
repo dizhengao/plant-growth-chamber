@@ -25,19 +25,59 @@ Last update: 27.4.21
 
 ## Meetings
 
-### 1x.5.2021
+### 3.6.2021
 
-Aims:
+**Aims:**
 
-0. [ ] Discuss problems in the first trial. Plot condition data and combine images into a video.
-1. [ ] Temperature calibration.
-2. [ ] Cooling.
-3. [ ] Humidity control.
-4. [ ] Light.
-5. [ ] Irrigation:
-   1. [ ] Invertals: 60h
+0. [x] Plot condition data and combine images into a video.
+2. [x] Discuss achievement and problems in the first trial, summaries a .md to Trial folder.
+	1. Features achieved 
+	2. [x] Network connection problems -> split into two codes
+	3. [x] Drain: See below
+3. [x] Temperature calibration
+4. [x] Cooling.
+5. [x] Humidity control.
+6. [x] Light.
+7. [x] Irrigation:
+   1. [ ] Intervals: 60h
    2. [ ] watering time: 30->15s
-   3. [ ] How to drain remaining water?
+   3. [ ] How to drain remaining water? -> Hole at the bottom
+8. [x] Visualisation kit
+9. [ ] Next step plans (June):
+	4. Controls
+	5. modification to box
+	6. LCD screen.
+	7. Plate 2.0
+	8. Irrigation
+
+**Minutes:**
+
+1. To summarise features and problems in the first trial.
+2. [ ] Separate Rpi program into 2 python scripts: local logging and upload:
+   1. [ ] two ssh sessions
+   2. [ ] two .py
+3. Cooling:
+   1. Fan at the light
+   2. Make two holes on the sides of the box, one for air in and another one for air out (with the help with a fan)
+4. Irrigation:
+   1. Drain a series of holes, with different sizes, at the bottom of the box and test the optimal size
+   2. A tray under the lunch box to store extra water, make a holder (Tokenm) to hold the lunch on top of the tray.
+   3. With the above, optimise irrigation intervals and duration.
+   4. Add a manual control to pump
+5. Temperature measurements: don't have to worry so much.
+6. :sparkles:Make a portable visualisation kit.
+7. Assemble a circuit to show BME680 and NTC values.
+
+To buy:
+
+1. Another fan
+2. SD card
+3. Cooler
+4. Rpi and screen and card and case
+5. Thermometer
+6. Humidifier
+7. Timer switch
+8. Relay
 
 ### 17.4.2021
 
