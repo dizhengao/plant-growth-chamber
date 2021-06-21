@@ -1,6 +1,6 @@
 # Prototype
 
-This file aims at documenting setup of the chamber.
+This file is a general design of the chamber.
 
 - [Prototype](#prototype)
   - [1. Overview](#1-overview)

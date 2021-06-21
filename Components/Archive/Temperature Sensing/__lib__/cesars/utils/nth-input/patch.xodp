@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "description": "The selected value. Equals to one of `Xi` input.",
+      "id": "BkVsLE7gdL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-t1"
+    },
+    {
+      "id": "ByGjLNmgO8",
+      "label": "X1",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-t1"
+    },
+    {
+      "description": "Index to select. All values below 1 are considered to be 0. Values of 1 and above are considered to be 1.",
+      "id": "S1eoINXxuL",
+      "label": "IDX",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SyXjIV7xuI",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/variadic-1"
+    },
+    {
+      "id": "SyriU4QlO8",
+      "label": "X0",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-t1"
+    },
+    {
+      "description": "Utility output needed for expanding node. Shoud be ignored by the end user.\n",
+      "id": "r1ZjU4QedU",
+      "label": "-",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "rkjLEmgdU",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

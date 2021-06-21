@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Triggers a single step.",
+      "id": "B1XVE25CWU",
+      "label": "PULSE",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__in__": "0"
+      },
+      "description": "The counting value. set OUT for start of counting.",
+      "id": "BJxNEncCWU",
+      "label": "OUT",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "0"
+      },
+      "description": "Start Value to count.",
+      "id": "H1HNV29RbI",
+      "label": "START",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "H1U4E29RbU",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "SJbVNh9CZL",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Resets the counting value to start.",
+      "id": "r1GEEh90-8",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "Stop Value to count.",
+      "id": "r1VV29C-I",
+      "label": "STOP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "Value to add on each increment. (Stop > Start)\nUse a negative value (e.g. -1) to make decrements. (Stop < Start)",
+      "id": "rJVE429AWL",
+      "label": "STEP",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}

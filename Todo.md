@@ -16,14 +16,30 @@ Last update: 27.4.21
 3. [x] [Debug]Data logging: 
    1. [x] Cloud 
    2. [ ] LCD screen.
-4. [ ] [Debug]3D-print plates.
+4. [x] [Debug]3D-print plates.
 5. [x] Camera.
 6. [x] Data visualization on the 2nd Pi
    1. [x] real-time images, sensor data
    2. [ ] remote control.
-7. [ ] Chamber assembly, circuit position into the chamber, light and camera ready.
+7. [x] Chamber assembly, circuit position into the chamber, light and camera ready.
 
 ## Meetings
+
+### xx.6.21
+
+**Aims:**
+
+1. Implement fan, pump, humidifier. Position sensors.
+2. Test cooling, temperature.
+
+### 17.6.21
+
+Install light and other device on the chamber. Simplify structure.
+
+Todo:
+
+1. Need to change Relay program (Position; Always on for the top fan)
+2. Implement fan, pump and sensor in the next week.
 
 ### 3.6.2021
 

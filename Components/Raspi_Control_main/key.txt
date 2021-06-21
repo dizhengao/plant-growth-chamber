@@ -1,0 +1,8 @@
+AIO Key: aio_tHeS57yFFcZZXcsHiIH43BLjW0OW
+
+Google Client ID: 905289600970-u9poi60jdu871f3hmatai9ebefuvcisf.apps.googleusercontent.com
+Google Client Secret: JYUAmH-riCJxVrX90GkUrh7H
+
+grive -a --id 905289600970-hjgfhngf929c6q8oir7julq2vpoeq1k5.apps.googleusercontent.com --secret ARPD_g51HPmU5RayaXDdmuOX
+
+google account: zd101iot@gmail.com PlantChamber@Canterbury
