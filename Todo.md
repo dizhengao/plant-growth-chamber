@@ -25,12 +25,23 @@ Last update: 27.4.21
 
 ## Meetings
 
-### xx.6.21
+### 9.7.21
 
 **Aims:**
 
-1. Implement fan, pump, humidifier. Position sensors.
+1. Implement fans, pump, humidifier. Position sensors.
 2. Test cooling, temperature.
+
+**Minutes:**
+
+1. Implemented fans, pump, camera and sensors. Humidifier still not working.
+2. Check out Pictures/Box/Version2/20210709 for updates.
+
+**TODO:**
+
+1. Adjust light
+2. Order a 24v DC supply; Adjust camera position; print plate; Start another trial.
+3. Adjust python code: Separate scripts.
 
 ### 17.6.21
 

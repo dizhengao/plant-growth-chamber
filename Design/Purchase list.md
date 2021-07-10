@@ -73,7 +73,9 @@ This webpage contains useful information about integrated sensors for RaspberryP
 ## 3. To Buy
 
 - [ ] RPi stuff (See below)
-- [ ] Humidifier (?)
+- [ ] Humidifier 
+- [ ] 12V DC
+- [ ] RPi Camera?
 - [ ] Cooler?
 ---
 - [ ] [JKL Components White LED Strip 5m 12V dc, ZFS-155000-CW RS Stock No. 123-1037](https://uk.rs-online.com/web/p/led-strip-lights/1231037/) £132.24, 6500ºK, 6925 lum, 159.28 umol/s PPFD
