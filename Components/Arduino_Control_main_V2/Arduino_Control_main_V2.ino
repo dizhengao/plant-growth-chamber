@@ -77,7 +77,7 @@ void loop() {
     Temp_LM75_built_in = temper75.getTemperatue();//get temperature from LM75 sensor
     Temp_NTC_read = temperNTC.read_ntc_sensor_temp();// get temperature from NTC sensor
 
-    BME_temp=bme680.sensor_result_value.temperature-4;
+    BME_temp=bme680.sensor_result_value.temperature-2;
     BME_humi=bme680.sensor_result_value.humidity;
     BME_pressure=bme680.sensor_result_value.pressure / 1000.0;
  

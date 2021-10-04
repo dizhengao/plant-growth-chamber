@@ -36,12 +36,18 @@ float NTC_temp::read_ntc_sensor_temp(){
 
   
   // convert the value to resistance
-  average = 1023 / average - 1;
-  average = R0 / average;
+  //average = 1023 / average - 1;
+  //average = R0 / average;
+
   
   float steinhart;
-  steinhart = average / R0;     // (R/Ro)
-  steinhart = log(steinhart);                  // ln(R/Ro)
+  // convert the value to resistance
+  average = average/1023;
+  steinhart=average*R0/(1-average);
+  steinhart=log(steinhart/R0);
+  
+  //steinhart = average / R0;     // (R/Ro)
+  //steinhart = log(steinhart);                  // ln(R/Ro)
   steinhart /= B_parameter;                   // 1/B * ln(R/Ro)
   steinhart += 1.0 / (T0 + 273.15); // + (1/To)
   steinhart = 1.0 / steinhart;                 // Invert
